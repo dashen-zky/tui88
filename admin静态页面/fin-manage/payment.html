@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>财务管理-付款</title>
+    <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../dep/css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/site-stage-common.css">
+    <link rel="stylesheet" href="../src/css/fin-manage/payment.css">
+</head>
+<body>
+<div class="header clearfix">
+    <h2 class="fl">TUI88后台ADMIN</h2>
+    <div class="personal-info fr">
+        <ul class="clearfix">
+            <li class="clearfix">
+                <i class="fl"></i>
+                <span class="user-name fl">荔枝</span>
+            </li>
+            <li><a href="javascript:;"><span class="msg-number">20</span></a></li>
+            <li><a class="logout color-fff" href="javascript:;">退出</a></li>
+        </ul>
+    </div>
+</div>
+<!-- 主要内容部分-->
+<div class="content-wrap clearfix">
+    <div class="sidebar fl">
+        <ul class="menu">
+            <li><a class="first-nav" href="#"><i></i><span>用户管理</span></a></li>
+            <li class="personal-setting">
+                <a class="first-nav" href="#"><i></i><span>任务管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#">任务发布</a>
+                    <a href="#">任务列表</a>
+                </div>
+            </li>
+            <li>
+                <a class="first-nav" href="#"><i></i><span>订单管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#">订单列表</a>
+                </div>
+            </li>
+            <li>
+                <a class="first-nav" href="#"><i></i><span>结算管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#">结算</a>
+                    <a href="#">结算记录</a>
+                </div>
+            </li>
+            <li class="current-side-nav">
+                <a class="first-nav" href="#"><i></i><span>财务管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#" class="current-list-nav">付款</a>
+                    <a href="#">付款记录</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="content-r fl">
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">财务管理</a></li>
+                <li class="active">付款</li>
+            </ol>
+        </div>
+        <div class="con-header clearfix">
+            <div class="settlement-time fl">
+                结算时间: <input type="text" name="settlement_start_time" value="" class="datetimepicker" readonly="readonly" placeholder="请选择开始时间"> 至
+                <input type="text" name="settlement_end_time" value="" class="datetimepicker" readonly="readonly" placeholder="请选择结束时间">
+                <i class="start-icon"></i><i class="end-icon"></i>
+            </div>
+            <div class="amount-money-collection fl">
+                结算金额: <input type="text" name="min_amount" placeholder="￥最小金额"> 至
+                <input type="text" name="max_amount" placeholder="￥最大金额">
+            </div>
+            <div class="search-area fl">
+                <input class="search-input form-control" type="text" placeholder="请输入结算单号、手机号或收款人">
+                <button class="btn btn-search bg-main">搜索</button>
+            </div>
+        </div>
+        <div class="total-account clearfix">
+            <span>共<i>23</i>条信息</span>
+        </div>
+        <div class="task-table">
+            <div class="task-tb-info table-wrap table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th width="100">结算单号</th>
+                        <th width="100">用户手机号</th>
+                        <th width="100">付款金额</th>
+                        <th width="90">任务数量</th>
+                        <th width="100">结算时间</th>
+                        <th width="215">收款银行</th>
+                        <th width="150">收款账号</th>
+                        <th width="80">收款人</th>
+                        <th width="100">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3432432</td>
+                        <td>15005174702</td>
+                        <td>12,340.99</td>
+                        <td>200</td>
+                        <td>2016.12.24 23:23</td>
+                        <td class="plain-text-length-limit" data-limit="16">中国建设银行-南京分行-鼓楼第一支行</td>
+                        <td>6227001689690705635</td>
+                        <td>李坤芳</td>
+                        <td class="operate">
+                            <a href="#" target="_blank">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-payment">付款</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="no-task">暂无付款信息</div>
+            </div>
+            <div class="page-wb system_page clearfix" data-value="20287">
+                <ul class="pagination fr"><li class="disabled"><a>首页</a></li>
+                    <li class="prev disabled"><a>上一页</a></li>
+                    <li class="active"><a data-page="0" style="cursor: pointer;">1</a></li>
+                    <li><a data-page="1" style="cursor: pointer;">2</a></li>
+                    <li><a data-page="2" style="cursor: pointer;">3</a></li>
+                    <li><a data-page="3" style="cursor: pointer;">4</a></li>
+                    <li><a data-page="4" style="cursor: pointer;">5</a></li>
+                    <li><a data-page="1" style="cursor: pointer;">下一页</a></li>
+                    <li class="last"><a data-page="2028" style="cursor: pointer;">尾页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--付款modal层-->
+<div id="modal-payment" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix"><span class="fl">付款</span><i class="close fr" data-dismiss="modal"></i></div>
+            <div class="modal-body">
+                <ul class="configuration-item clearfix">
+                    <li><span class="title">手机号:</span><i>15020328273</i></li>
+                    <li><span class="title">付款金额:</span><i>5678.09</i></li>
+                    <li><span class="title">收款人:</span><i>李坤芳</i></li>
+                    <li><span class="title">收款银行:</span><i>中国建设银行-南京分行-鼓楼支行</i></li>
+                    <li><span class="title">收款账号:</span><i>6227001689690772635</i></li>
+                </ul>
+                <div class="screenshot">
+                    <span class="title">上传凭证:</span><button id="id-upload-001-btn" class="btn btn-up-file bg-main" for="id-upload-001-preview-area">上传</button>
+                </div>
+                <div id="id-upload-001-preview-area" class="upload-preview-area"></div>
+                <div class="reply-msg info-group">
+                    <span class="title">留言:</span><textarea class="form-control" name="" cols="30" rows="10" placeholder="请输入留言"></textarea>
+                </div>
+                <p class="error-msg"></p>
+                <div class="btn-group-checkd">
+                    <button class="btn-submit btn bg-main" data-dismiss="modal">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../dep/js/jquery.datetimepicker.js"></script>
+<script src="../dep/js/datetime.js"></script>
+<script src="../dep/layer/layer.js"></script>
+<script src="../dep/plupload/plupload.full.min.js"></script>
+<script src="../dep/js/wom-uploader.js"></script>
+<script src="../dep/js/tui88-tool.js"></script>
+<script src="../src/js/site-stage-common.js"></script>
+<script src="../src/js/fin-manage/payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+.main-wrap{
+    background: #eff4f7;
+}
+.main-con{
+    width: 90%;
+    min-height: 780px;
+    background: #fff;
+    margin: 35px auto;
+    position: relative;
+}
+.main-con .regist-con{
+    width:454px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: -281px 0 0 -227px;
+}
+.regist-con h2{
+    color: #37516a;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.regist-con .input-group span{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+.content .input-group{
+    margin-bottom: 20px;
+    position: relative;
+}
+.content .input-group .tips{
+    position: absolute;
+    bottom: -18px;
+    left: 82px;
+    font-size: 12px;
+    color: #c61620;
+    padding: 0 10px;
+    background: #fff;
+    display: none;
+}
+.content .code-insure .tips{
+    bottom: -18px;
+    right: 150px;
+}
+.content .input-group .title{
+    display: inline-block;
+    width: 82px;
+    text-align: right;
+    font-size: 14px;
+    color: #1e1e1e;
+    position: relative;
+}
+.content .input-group input{
+    width: 350px;
+    height: 36px;
+    font-size: 12px;
+    outline:none;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    text-indent: 1em;
+    margin-left: 10px;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .input-group input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .code-insure .title i{
+    left: -6px;
+}
+.content .code-insure input{
+    width: 212px;
+}
+.content .code-insure .get-code,
+.content .code-insure .unclick{
+    display: inline-block;
+    width: 132px;
+    height: 36px;
+    float: right;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+.content .code-insure .unclick{
+    background: #395169;
+    display: none;
+}
+.content .agree input{
+    width: 12px;
+    height: 12px;
+    margin:0 4px 0  92px;
+}
+.content .agree span{
+    color: #1e1e1e;
+    font-size: 12px;
+}
+.content .agree span a{
+     color: #506276;
+ }
+.content .agree .agree_serve{
+    margin:10px 0 0 92px;
+    color: #c61620;
+    font-weight: 600;
+    display: none;
+}
+.content .insure-regist{
+    display: block;
+    width: 100px;
+    height: 36px;
+    line-height: 24px;
+    margin: 30px auto 0;
+}
+.content .insure-regist:hover{
+    color: #fff;
+}
+.content .insure-regist:visited{
+    color: #fff;
+}
+.content .insure-regist:link{
+    color: #fff;
+}
+
+

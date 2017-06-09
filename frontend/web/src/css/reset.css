@@ -1,0 +1,79 @@
+/*
+@name: wom-reset.css
+@description:Basic style of wom platform.
+@author: FE-wzq
+*/
+@charset "utf-8";
+/*清除内外边距*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,ul,ol,dl,li,dd,dt,pre,button,input,textarea,fieldset,legend,th,td,header,footer,nav,section {
+	margin:0;
+	padding:0
+}
+/*设置默认字体*/
+body,button,input,select,textarea,div,span,ul,li,a{font-family:"Microsoft YaHei",Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;}
+h1 {font-size:18px;}
+h2 {font-size:16px;}
+h3 {font-size:14px;}
+h4,h5,h6 {font-size:100%}
+/*取消斜体样式*/
+address,cite,dfn,em,var {font-style:normal}
+/*重置列表元素*/
+ul,ol {list-style:none}
+/*重置文本格式元素*/
+a {text-decoration:none;color: #3c3c3c}
+a:hover{color: inherit;}
+	/*重置表单元素*/
+a {text-decoration:none!important;color:#000;}
+/*重置表单元素*/
+legend {color:#000}
+fieldset,img {border:0}
+button,input,select,textarea {font-size:100%}
+/*重置表格元素*/
+table {border-collapse:collapse;border-spacing:0}
+/* 重置 hr */
+hr {border:0;height:1px}
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+img button {border:0}
+i,strong,em{font-style: normal;}
+/*盒模型类型*/
+* {box-sizing:border-box}
+/*浮动*/
+.fl{float: left;}
+.fr{float: right;}
+/*清除浮动*/
+.clearfix{zoom:1}
+.clearfix:after {content:"";height:0;clear:both;display:block;overflow:hidden}
+/*显示隐藏*/
+.hidden {display:none}
+.show {display:block}
+/*让语义化标签在所有浏览器生效*/
+header,section,footer,aside,nav,article,figure {display:block}
+/*字体大小,粗细,颜色*/
+.font-24{font-size: 24px;}
+.font-22{font-size: 22px;}
+.font-20{font-size: 20px;}
+.font-18{font-size: 18px;}
+.font-16{font-size: 16px;}
+.font-14{font-size: 14px;}
+.font-12{font-size: 12px;}
+
+.font-500{font-weight: 500;}
+.font-600{font-weight: 600;}
+.font-normal{font-weight: normal;}
+
+.color-main{color: #2ea0de;}
+.color-1e1e1e{color: #1e1e1e;}
+.color-fff{color: #fff;}
+.color-000{color: #000;}
+.color-ccc{color: #ccc;}
+/*背景颜色设置*/
+.bg-main{background: #2ea0de;}
+.bg-000{background: #000;}
+.bg-fff{background: #fff;}
+.bg-ccc{background: #ccc;}
+/*手型*/
+.cursor{cursor: pointer;}
+/*用rem时注意*/
+/*:root{
+	font-size: 96px;
+}*/

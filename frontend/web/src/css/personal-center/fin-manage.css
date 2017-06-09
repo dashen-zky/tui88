@@ -1,0 +1,334 @@
+/*
+	财务管理页面样式
+*/
+.show{
+    display: block;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分~~~~~~~~~~~~~~~~~~~~~*/
+
+.content{
+	margin-left: 18.375%;
+	font-size: 12px;
+	padding-right: 22px;
+}
+.bread{
+	font-size: 14px;
+}
+.con-header ul{
+	height: 82px;
+	margin-top: 10px;
+}
+.con-header li{
+	float: left;
+	width: 22.957%;
+	height: 82px;
+	background: #fff;
+	border-radius: 2px;
+	padding: 25px 0 0 4.28%;
+	margin-right: 2.724%;
+}
+.con-header li div{
+	float: left;
+}
+.con-header li .account{
+	margin-left: 20px;
+}
+.con-header li .icon{
+	width: 38px;
+	height: 38px;
+	background: url("../../images/tui88-ghost.png") 0 -336px no-repeat;
+}
+.con-header li:nth-of-type(2) .icon{
+	background: url("../../images/tui88-ghost.png") -37px -336px no-repeat;
+}
+.con-header li:nth-of-type(3) .icon{
+	background: url("../../images/tui88-ghost.png") -75px -336px no-repeat;
+}
+.con-header li:nth-of-type(4) .icon{
+	background: url("../../images/tui88-ghost.png") -114px -336px no-repeat;
+}
+.con-header li:nth-of-type(4){
+	margin-right: 0;
+}
+.con-header li div span{
+	display: block;
+}
+.con-header li div span:nth-of-type(1){
+	font-size: 14px;
+}
+.con-header li div span:nth-of-type(2){
+	font-size: 12px;
+}
+h4{
+	color: #55616f;
+	font-size: 14px;
+	font-weight: normal;
+	margin:20px 0 16px 0;
+}
+.collection-record-top{
+	min-width: 940px;
+	height: 72px;
+	padding: 20px 0 0 20px;
+	font-size: 14px;
+}
+.collection-record-top input{
+	height: 36px;
+	outline:none;
+	border-radius: 2px;
+	padding:0 8px ;
+	border: 1px solid #dddddd;
+	transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	-moz-transition:all .4s ease;
+	-ms-transition:all .4s ease;
+	-o-transition:all .4s ease;
+}
+.collection-record-top input:focus{
+	border: 1px solid #66afe9;
+	box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+	transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	-moz-transition:all .4s ease;
+	-ms-transition:all .4s ease;
+	-o-transition:all .4s ease;
+}
+.collection-record-top input::-moz-placeholder{color:#b6bbbf;}
+.collection-record-top input::-webkit-input-placeholder{color:#b6bbbf;}
+
+
+.collection-time{
+	position: relative;
+}
+.collection-time input{
+	width: 162px;
+	margin:0 6px;
+}
+.collection-time i{
+	display: block;
+	position: absolute;
+	top:10px;
+	width: 18px;
+	height: 18px;
+	background: url("../../images/tui88-ghost.png") 0 -380px no-repeat;
+}
+.collection-time i.start-icon{
+	left: 206px;
+}
+.collection-time i.end-icon{
+	left: 403px;
+}
+.collection-amount{
+	margin-left: 20px;
+}
+.collection-amount input{
+	width: 140px;
+	margin:0 6px;
+}
+/*收款记录列表*/
+.collection-record-bot{
+	padding:0 8px;
+	margin:10px 0 2px;
+}
+.collection-item .dot{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #b2b2b2;
+	margin: 26px 8px 0 0;
+}
+.collection-item .dot.light{
+	background: #2d9fdd;
+}
+.collection-item-show{
+	overflow: hidden;
+	zoom: 1;
+	padding: 0 10px 0 14px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.collection-item-l li{
+	display: inline-block;
+	width:130px;;
+	line-height: 60px;
+	margin-right: 60px;
+}
+.collection-item ul li:nth-of-type(4){
+	margin-right: 0;
+}
+.collection-item-r{
+	padding-top: 22px;
+}
+.collection-item-r a{
+	color: #2d9fdd;
+}
+.collection-item-r .paying-voucher{
+	margin-right: 20px;
+}
+.collection-item-r .task-relevant i{
+	display: inline-block;
+	width: 12px;
+	height: 8px;
+	margin-left: 4px;
+	background: url("../../images/tui88-ghost.png") 0 -408px no-repeat;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+.task-relevant i.rotate{
+	-webkit-transform: rotateZ(180deg);
+	-moz-transform: rotateZ(180deg);
+	-ms-transform: rotateZ(180deg);
+	-o-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+}
+
+/*相关任务*/
+.collection-item-hide{
+	display: none;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.collection-item-hide .page-change{
+	text-align: right;
+	padding-right: 38px;
+	margin-top: 10px;
+}
+.page-change span{
+	display: inline-block;
+	/*width: 8px;*/
+	height: 14px;
+	margin-left: 6px;
+	cursor: pointer;
+	color: #2d9fdd;
+	/*background: url("../../images/tui88-ghost.png") no-repeat;*/
+}
+.page-change span:hover{
+	text-decoration: underline;
+}
+/*.page-change span:nth-of-type(1){*/
+	/*background-position: -38px -380px;*/
+/*}*/
+/*.page-change span:nth-of-type(2){*/
+	/*background-position: -54px -395px;*/
+/*}*/
+/*.page-change .prev.forbid{*/
+	/*background-position: -38px -395px;*/
+/*}*/
+/*.page-change .next.forbid{*/
+	/*background-position: -54px -380px;*/
+/*}*/
+table{
+	margin-top:12px;
+}
+table thead tr{
+	height: 30px;
+}
+table tr{
+	height: 30px;
+}
+table td,
+table th{
+	text-align: center;
+}
+table td a:hover{
+	color: #2da1de;
+}
+table th{
+	font-size: 14px;
+	font-weight: normal;
+}
+.table-wrap{
+	max-height: 600px;
+	overflow-y: scroll;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~modal收款凭证~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-header{
+	border-bottom: 1px solid #C0C5CB;
+}
+.modal-footer{
+	border: 0;
+}
+.modal-content{
+	padding: 0 10px;
+}
+.modal-dialog{
+	width: 510px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -234px 0 0 -247px;
+}
+.modal-header span{
+	color: #36526A;
+	font-weight: 500;
+}
+.modal-header i.close{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	opacity: 1;
+	margin-top: 2px;
+	background: url("../../images/tui88-ghost.png") -122px -89px no-repeat;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s;
+}
+.modal-header i.close:hover{
+	opacity: 1;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.sum-show{
+	color: #38526B;
+	line-height: 44px;
+	margin-bottom: 14px;
+}
+.pic{
+	display: inline-block;
+	width: 340px;
+}
+.pic-show span{
+	color: #38526B;
+	vertical-align: top;
+}
+.pic img{
+	width: 102px;
+	height: 102px;
+	border: 1px solid #C0C5CB;
+	border-radius: 4px;
+	vertical-align: top;
+	margin:6px 4px 0 0;
+}
+.remarks{
+	line-height: 22px;
+	margin: 20px 0 0 33px;
+}
+.remarks span:nth-of-type(2){
+	display: inline-block;
+}
+#paying-voucher .modal-body{
+	max-height: 456px;
+	overflow-y: scroll;
+}
+.no-collection-record{
+	height: 300px;
+	text-align: center;
+	line-height: 300px;
+	font-size: 14px;
+	color: #8e8e8e;
+	background: #fff;
+	display: none;
+}
+.collection-amount .btn-search{
+	color: #fff;
+	border-radius: 2px;
+	margin-top: -4px;
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>订单列表</title>
+    <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../dep/css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/site-stage-common.css">
+    <link rel="stylesheet" href="../src/css/order-manage/order-list.css">
+</head>
+<body>
+<div class="header clearfix">
+    <h2 class="fl">TUI88后台ADMIN</h2>
+    <div class="personal-info fr">
+        <ul class="clearfix">
+            <li class="clearfix">
+                <i class="fl"></i>
+                <span class="user-name fl">荔枝</span>
+            </li>
+            <li><a href="javascript:;"><span class="msg-number">20</span></a></li>
+            <li><a class="logout color-fff" href="javascript:;">退出</a></li>
+        </ul>
+    </div>
+</div>
+<!-- 主要内容部分-->
+<div class="content-wrap clearfix">
+    <div class="sidebar fl">
+        <ul class="menu">
+            <li><a class="first-nav" href="#"><i></i><span>推客管理</span></a></li>
+            <li class="personal-setting">
+                <a class="first-nav" class="" href="#"><i></i><span>任务管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#">任务发布</a>
+                    <a href="#">任务列表</a>
+                </div>
+            </li>
+            <li class="current-side-nav personal-setting">
+                <a class="first-nav" class="" href="#"><i></i><span>订单管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#" class="current-list-nav">订单列表</a>
+                </div>
+            </li>
+            <li><a class="first-nav" href="#"><i></i><span>财务管理</span></a></li>
+        </ul>
+    </div>
+    <div class="content-r fl">
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                <li><a href="#">首页</a></li>
+                <li class="active">订单管理</li>
+            </ol>
+        </div>
+        <div class="con-header">
+            <div class="con-header-top">
+                <span class="title">执行状态:</span>
+                <label class="check-all"><input type="checkbox"> 全部</label>
+                <div class="condition-selected">
+                    <label><input name="" type="checkbox"> 待确认</label>
+                    <label><input type="checkbox"> 待收款</label>
+                    <label><input type="checkbox"> 已收款</label>
+                    <label><input type="checkbox"> 失败-未通过</label>
+                    <label><input type="checkbox"> 失败-已过期</label>
+                    <label><input type="checkbox"> 失败-已终止</label>
+                    <label><input type="checkbox"> 失败-已放弃</label>
+                    <label><input type="checkbox"> 待执行</label>
+                    <label><input type="checkbox"> 执行中</label>
+                </div>
+            </div>
+            <div class="con-header-bot">
+                <div class="establish-time condition-area">
+                    <span class="title">创建时间:</span>
+                    <input type="text" name="establish_start_time" value="" class="datetimepicker" readonly="readonly"> 至
+                    <input type="text" name="establish_end_time" value="" class="datetimepicker" readonly="readonly">
+                    <i class="start-icon"></i>
+                    <i class="end-icon"></i>
+                </div>
+                <div class="search-area">
+                    <input class="search-input form-control" type="text" placeholder="请输入订单编号、任务名称或任务编号进行搜索">
+                    <button class="btn btn-search bg-main">搜索</button>
+                </div>
+            </div>
+        </div>
+        <div class="task-table">
+            <div class="task-tb-info table-wrap table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th width="150">订单编号</th>
+                        <th width="350">任务名称</th>
+                        <th width="150">创建时间</th>
+                        <th width="150">用户手机号</th>
+                        <th width="120">执行状态</th>
+                        <th width="120">任务金额</th>
+                        <th width="120">确认金额</th>
+                        <th width="150">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>待执行</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>执行中</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>待确认</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                                <a class="check" href="#" data-toggle="modal" data-target="#modal-check">审核</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>待收款</td>
+                            <td>3.99</td>
+                            <td>3.99</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>已收款</td>
+                            <td>3.99</td>
+                            <td>3.99</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>失败-未通过</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                                <a class="btn-modify" href="#" data-toggle="modal" data-target="#modal-modify">修改</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>失败-已过期</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>失败-已终止</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                                <a class="btn-modify" href="javascript:;" data-toggle="modal" data-target="#modal-modify">修改</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>失败-已放弃</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>已收款</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>待执行</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>执行中</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>待确认</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                                <a class="check" href="#" data-toggle="modal" data-target="#modal-check">审核</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>待收款</td>
+                            <td>3.99</td>
+                            <td>3.99</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>已收款</td>
+                            <td>3.99</td>
+                            <td>3.99</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>失败-未通过</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                                <a class="btn-modify" href="#" data-toggle="modal" data-target="#modal-modify">修改</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>失败-已过期</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>失败-已终止</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                                <a class="btn-modify" href="javascript:;" data-toggle="modal" data-target="#modal-modify">修改</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>失败-已放弃</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201189092009809</td>
+                            <td><a class="plain-text-length-limit" data-limit="18" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>2016.12.31 12:30</td>
+                            <td>15012315623</td>
+                            <td>已收款</td>
+                            <td>3.99</td>
+                            <td>--</td>
+                            <td class="operate">
+                                <a href="#" target="_blank">详情</a>
+                                <a class="same-batch" href="javascript:;">同批</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="no-task">暂无订单</div>
+            </div>
+            <div class="page-wb system_page clearfix" data-value="20287">
+                <ul class="pagination fr"><li class="disabled"><a>首页</a></li>
+                    <li class="prev disabled"><a>上一页</a></li>
+                    <li class="active"><a data-page="0" style="cursor: pointer;">1</a></li>
+                    <li><a data-page="1" style="cursor: pointer;">2</a></li>
+                    <li><a data-page="2" style="cursor: pointer;">3</a></li>
+                    <li><a data-page="3" style="cursor: pointer;">4</a></li>
+                    <li><a data-page="4" style="cursor: pointer;">5</a></li>
+                    <li><a data-page="1" style="cursor: pointer;">下一页</a></li>
+                    <li class="last"><a data-page="2028" style="cursor: pointer;">尾页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--审核modal层-->
+<div id="modal-check" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix"><span class="fl">审核</span><i class="close fr" data-dismiss="modal"></i></div>
+            <div class="modal-body">
+                <ul class="configuration-item clearfix">
+                    <li><span class="title">身份证:</span><i>320123298128318298</i></li>
+                    <li><span class="title">手机:</span><i>18273273837</i></li>
+                    <li><span class="title">注册账号:</span><i>6172635383827</i></li>
+                </ul>
+                <div class="pic-show">
+                    <span class="title">截图:</span>
+                    <div class="pic">
+                        <img src="../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+                        <img src="../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+                        <img src="../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+                        <img src="../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+                        <!--<img src="../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />-->
+                        <!--<img src="../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />-->
+                    </div>
+                </div>
+                <p class="remarks clearfix info-group">
+                    <span class="title fl">留言:</span>
+                    <span class="fl">具体看截图</span>
+                </p>
+                <div class="modify-account info-group">
+                    <span class="title">修改金额:</span><input class="form-control" type="text">
+                    <span class="task-account">任务金额: <i>0.99</i></span>
+                </div>
+                <div class="reply-msg info-group">
+                    <span class="title">留言:</span><textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <p class="error-msg"></p>
+                <div class="btn-group-checkd">
+                    <button class="btn btn-modal-pass bg-main" data-dismiss="modal">通过</button>
+                    <button class="btn btn-modal-no-go bg-main" data-dismiss="modal">不通过</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--修改modal层-->
+<div id="modal-modify" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix"><span class="fl">修改</span><i class="close fr" data-dismiss="modal"></i></div>
+            <div class="modal-body">
+                <ul class="configuration-item clearfix">
+                    <li><span class="title">身份证:</span><input class="input-id-card form-control" type="text" placeholder="请输入身份证号"></li>
+                    <li><span class="title">手机:</span><input class="input-tel form-control" type="text" placeholder="请输入手机号"></li>
+                    <li><span class="title">注册账号:</span><input class="input-regist-account form-control" type="text" placeholder="请输入注册账号"></li>
+                </ul>
+                <div class="screenshot">
+                    <span class="title">截图:</span><button id="id-upload-001-btn" class="btn btn-up-file bg-main" for="id-upload-001-preview-area">上传</button>
+                </div>
+                <div id="id-upload-001-preview-area" class="upload-preview-area"></div>
+                <p class="remarks clearfix info-group">
+                    <span class="title fl">留言:</span>
+                    <span class="fl">具体看截图</span>
+                </p>
+                <div class="modify-account info-group">
+                    <span class="title">修改金额:</span><input class="form-control" type="text">
+                    <span class="task-account">任务金额: <i>0.99</i></span>
+                </div>
+                <div class="reply-msg info-group">
+                    <span class="title">留言:</span><textarea class="form-control" name=""  cols="30" rows="10"></textarea>
+                </div>
+                <p class="error-msg"></p>
+                <div class="btn-group-checkd">
+                    <button class="btn btn-modal-pass bg-main" data-dismiss="modal">通过</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../dep/js/jquery.datetimepicker.js"></script>
+<script src="../dep/js/datetime.js"></script>
+<script src="../dep/layer/layer.js"></script>
+<script src="../dep/plupload/plupload.full.min.js"></script>
+<script src="../dep/js/wom-uploader.js"></script>
+<script src="../dep/js/tui88-tool.js"></script>
+<script src="../src/js/site-stage-common.js"></script>
+<script src="../src/js/order-manage/order-list.js"></script>
+</body>
+</html>

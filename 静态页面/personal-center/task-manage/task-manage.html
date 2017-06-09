@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>任务列表</title>
+	<link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+	<link rel="stylesheet" href="../../dep/css/jquery.datetimepicker.css">
+	<link rel="stylesheet" href="../../src/css/reset.css">
+	<link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+	<link rel="stylesheet" href="../../src/css/personal-center/task-manage.css">
+</head>
+<body>
+	<!--未登录状态下的头部导航-->
+	<div class="header clearfix" style="display: none">
+		<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+		<div class="unlogin fr">
+			<a href="#">注册</a>
+			<a href="#">登录</a>
+			<a href="#" style="display: none">返回登录</a>
+		</div>
+	</div>
+	<!--登录状态下的头部导航-->
+	<div class="header clearfix">
+		<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+		<div class="nav fl">
+			<a href="#" class="current-nav">个人中心</a>
+			<a href="#">任务大厅</a>
+		</div>
+		<div class="enter fr">
+			<a href="#">欢迎您，荔枝</a>
+			<a href="#">帮助中心</a>
+			<a href="#">退出</a>
+		</div>
+	</div>
+	<!-- 主要内容部分-->
+	<div class="main clearfix">
+		<div class="sidebar fl">
+			<h2 class="font-18">推客中心</h2>
+			<ul class="menu">
+				<li class="current-side-nav"><a class="first-nav" href="#"><i></i><span>任务管理</span><em>0</em></a></li>
+				<li class="personal-setting">
+					<a class="first-nav" class="" href="#"><i></i><span>个人设置</span><em></em></a>
+					<div class="menu-list">
+						<a href="#" class="">基础信息</a>
+						<a href="#">修改登录密码</a>
+						<a href="#">收款方式</a>
+					</div>
+				</li>
+				<li><a class="first-nav" href="#"><i></i><span>财务管理</span></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<!-- 面包屑 -->
+			<div class="bread">
+				<ol class="breadcrumb font-500">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">个人中心</a></li>
+					<li class="active">任务管理</li>
+				</ol>
+			</div>
+			<div class="con-header">
+				<div class="status-wrap">
+					<ul class="clearfix">
+						<li class="on-click">所有任务</li>
+						<li>待执行</li>
+						<li>执行中</li>
+						<li>待确认</li>
+						<li>执行失败</li>
+						<li>待收款</li>
+						<li>已收款</li>
+					</ul>
+				</div>
+				<div class="search-area">
+					<input class="search-input form-control" type="text" placeholder="请输入任务名称或任务编号进行搜索">
+					<button class="btn btn-search bg-main">搜索</button>
+				</div>
+			</div>
+			<div class="task-table">
+				<div class="task-tb-info table-wrap">
+					<table>
+						<thead>
+							<tr>
+								<th width="100">任务编号</th>
+								<th width="250">任务名称</th>
+								<th width="100">执行状态</th>
+								<th width="150">执行时间</th>
+								<th width="100">任务金额</th>
+								<th width="100">确认金额</th>
+								<th width="176">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>待执行</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="execute-detail.html" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="give-up" href="#" data-toggle="modal" data-target="#give-up"><i></i><span>放弃</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>执行中</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="submit-result" href="#" data-toggle="modal" data-target="#modal-submit"><i></i><span>提交</span></a>
+									<a class="give-up" href="#" data-toggle="modal" data-target="#give-up"><i></i><span>放弃</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>待确认</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="modify" href="#" data-toggle="modal" data-target="#modal-modify"><i></i><span>修改</span></a>
+									<a class="give-up" href="#" data-toggle="modal" data-target="#give-up"><i></i><span>放弃</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>失败-未通过</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>￥0.00</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>待收款</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>￥78.00</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>已收款</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>￥88.00</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="evidence" href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>收款凭证</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>失败-已过期</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>失败-已放弃</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>失败-已终止</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>待执行</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="give-up" href="#" data-toggle="modal" data-target="#give-up"><i></i><span>放弃</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>待执行</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="give-up" href="#" data-toggle="modal" data-target="#give-up"><i></i><span>放弃</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>执行中</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="submit-result" href="#" data-toggle="modal" data-target="#modal-submit"><i></i><span>提交</span></a>
+									<a class="give-up" href="#" data-toggle="modal" data-target="#give-up"><i></i><span>放弃</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>待确认</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="modify" href="#" data-toggle="modal" data-target="#modal-modify"><i></i><span>修改</span></a>
+									<a class="give-up" href="#" data-toggle="modal" data-target="#give-up"><i></i><span>放弃</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>失败-未通过</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>￥0.00</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>待收款</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>￥78.00</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>已收款</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>￥88.00</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="evidence" href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>收款凭证</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>失败-已过期</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>失败-已放弃</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>失败-已终止</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>201189092009809</td>
+								<td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+								<td>待执行</td>
+								<td>2016.11.09 至 2016.11.19</td>
+								<td>￥88</td>
+								<td>--</td>
+								<td class="operation">
+									<a class="execute-detail" href="#" target="_blank"><i></i><span>执行详情</span></a>
+									<a class="give-up" href="#" data-toggle="modal" data-target="#give-up"><i></i><span>放弃</span></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="no-task">暂无任务</div>
+				</div>
+				<div class="page-wb system_page clearfix" data-value="20287">
+					<ul class="pagination fr"><li class="disabled"><a>首页</a></li>
+						<li class="prev disabled"><a>上一页</a></li>
+						<li class="active"><a data-page="0" style="cursor: pointer;">1</a></li>
+						<li><a data-page="1" style="cursor: pointer;">2</a></li>
+						<li><a data-page="2" style="cursor: pointer;">3</a></li>
+						<li><a data-page="3" style="cursor: pointer;">4</a></li>
+						<li><a data-page="4" style="cursor: pointer;">5</a></li>
+						<li><a data-page="1" style="cursor: pointer;">下一页</a></li>
+						<li class="last"><a data-page="2028" style="cursor: pointer;">尾页</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部-->
+	<div class="footer">
+		copyright@tui88.com版权所有
+	</div>
+	<!-- 收款凭证modal层-->
+	<div id="paying-voucher" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl">收款凭证</span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<ul class="sum-show">
+						<li><span>收款金额：</span><i>2000</i>元</li>
+						<li><span>任务数量：</span><i>30</i></li>
+					</ul>
+					<div class="pic-show">
+						<span>收款凭证：</span>
+						<div class="pic">
+							<img src="../../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+							<img src="../../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+							<img src="../../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+							<img src="../../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+							<img src="../../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+							<img src="../../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+						</div>
+						<p class="remarks clearfix">
+							<span class="title fl">留言：</span>
+							<span class="fl">入账可能有延入账可能有账可能有延迟入账可能有延迟入账可有延迟入账可能有延迟入账可能能有延迟入账可能有延迟入账可能有延迟入账可能能有延迟入账可能有延迟入账可能有延迟入账可能有延迟</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 放弃modal层-->
+	<div id="give-up" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl">放弃</span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<p class="confirm-abandon">是否确认放弃执行该任务？</p>
+					<div class="reason-show">
+						<span>原因：</span>
+						<textarea name="" class="form-control"></textarea>
+					</div>
+					<p class="error-msg"></p>
+				</div>
+				<div class="modal-footer">
+					<a class="btn-modal-reason" href="javascript:;" data-dismiss="modal">提交</a>
+					<a href="javascript:;" data-dismiss="modal">取消</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 提交modal-->
+	<div id="modal-submit" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl">提交</span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<div class="info-group">
+						<span class="title">身份证:</span>
+						<input class="id-card-input form-control" type="text" placeholder="请输入身份证号">
+					</div>
+					<div class="info-group">
+						<span class="title">手机号:</span>
+						<input class="tel-input form-control" type="text" placeholder="请输入手机号">
+					</div>
+					<div class="info-group">
+						<span class="title">注册账号:</span>
+						<input class="regist-account-input form-control" type="text" placeholder="请输入注册账号">
+					</div>
+					<div class="info-group">
+						<span class="title">截图:</span>
+						<button id="id-upload-001-btn" class="btn btn-up-file bg-main" for="id-upload-001-preview-area">上传</button>
+					</div>
+					<div id="id-upload-001-preview-area" class="upload-preview-area"></div>
+					<div class="message info-group clearfix">
+						<span class="title fl">留言:</span>
+						<textarea class="message-input form-control" class="fl" name="" id="" cols="30" rows="10"></textarea>
+					</div>
+					<p class="error-msg">错误信息提示</p>
+					<button class="btn btn-modal-submit bg-main" data-dismiss="modal">提交</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 修改modal-->
+	<div id="modal-modify" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl">修改</span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<div class="info-group">
+						<span class="title">身份证:</span>
+						<input class="id-card-input form-control" type="text" placeholder="请输入身份证号">
+					</div>
+					<div class="info-group">
+						<span class="title">手机号:</span>
+						<input class="tel-input form-control" type="text" placeholder="请输入手机号">
+					</div>
+					<div class="info-group">
+						<span class="title">注册账号:</span>
+						<input class="regist-account-input form-control" type="text" placeholder="请输入注册账号">
+					</div>
+					<div class="info-group">
+						<span class="title">截图:</span>
+						<button id="id-upload-002-btn" class="btn btn-up-file bg-main" for="id-upload-001-preview-area">上传</button>
+					</div>
+					<div id="id-upload-002-preview-area" class="upload-preview-area"></div>
+					<div class="message info-group clearfix">
+						<span class="title fl">留言:</span>
+						<textarea class="message-input form-control" class="fl" name="" cols="30" rows="10"></textarea>
+					</div>
+					<p class="error-msg">错误信息提示</p>
+					<button class="btn btn-modal-modify bg-main" data-dismiss="modal">提交</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+	<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+	<script src="../../dep/js/jquery.datetimepicker.js"></script>
+	<script src="../../dep/js/datetime.js"></script>
+	<script src="../../dep/plupload/plupload.full.min.js"></script>
+	<script src="../../dep/js/wom-uploader.js"></script>
+	<script src="../../dep/js/tui88-tool.js"></script>
+	<script src="../../src/js/sidebar-common.js"></script>
+	<script src="../../src/js/personal-center/task-manage.js"></script>
+</body>
+</html>

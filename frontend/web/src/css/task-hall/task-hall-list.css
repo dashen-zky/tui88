@@ -1,0 +1,511 @@
+/*
+	任务大厅列表样式
+*/
+
+.main-wrap{
+	/*兼容IE8*/
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 1200px;
+	margin: -72px 0 -42px 0;
+	padding: 72px 0 42px 0;
+    background: #eff4f7;
+	box-sizing:border-box;
+}
+.all-task{
+	width: 93.75%;
+	min-width: 1200px;
+	margin: 18px auto 16px;
+}
+/*列表头部*/
+.search-con{
+	width: 93.75%;
+	min-width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 18px 0 0 1%;
+}
+.category{
+	width: 28.83%;
+	height: 36px;
+	border: 1px solid #bec5cd;
+}
+.category li{
+	float: left;
+	width: 25%;
+	padding-left: 3.59%;
+	line-height: 34px;
+	cursor: pointer;
+	border-right: 1px solid #d9dde0;
+}
+.category li:nth-of-type(1){
+	padding-left: 8.092%;
+}
+.category li:nth-of-type(4){
+	border: none;
+	padding-left: 6.358%;
+}
+.category li.choosed{
+	color: #fff;
+	background: #2ea0de;
+}
+.sort-icon{
+	position: relative;
+	display: inline-block;
+	right: 0px;
+	top: -3px;
+	margin-left: 4px;
+}
+.sort-icon i:nth-of-type(1),
+.sort-icon i:nth-of-type(2)
+{
+	display: inline-block;
+	width: 9px;
+	height: 6px;
+	position: absolute;
+	background: url("../../images/tui88-ghost.png") -79px -62px no-repeat;
+	cursor: pointer;
+}
+.sort-icon i:nth-of-type(1){
+	top: -10px;
+}
+.sort-icon i:nth-of-type(2){
+	background-position: -79px -70px;
+}
+
+
+.sort-icon i.up-hover{
+	background-position: -100px -62px;
+}
+.sort-icon i.down-hover{
+	background-position: -89px -70px;
+}
+.sort-icon i.up-choosed{
+	background-position: -89px -62px;
+}
+.sort-icon i.down-choosed{
+	background-position: -100px -70px;
+}
+.category li:hover{
+	color: #fff;
+	background: #2ea0de;
+}
+.category li .sort-icon .up.thin{
+	background-position: -100px -62px;
+}
+.category li .sort-icon .down.thin{
+	background-position: -89px -70px;
+}
+.search-con select{
+	width: 115px;
+	height: 36px;
+	margin: 0 32px 0 22px;
+}
+.unit-price{
+	width: 25.416%;
+	margin-left: 1%;
+}
+.input-search-task,
+.unit-price input{
+    width: 34.677%;
+    height: 36px;
+    font-size: 14px;
+    outline:none;
+    border-radius: 2px;
+    border: 1px solid #bec5cd;
+    text-indent: 1em;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.unit-price input:focus,
+.input-search-task:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.input-search-task{
+	width: 19.166%;
+	margin-left: 1.66%;
+	display: inline-block;
+	padding-left: 0;
+}
+.unit-price input::-moz-placeholder{color:#b6bbbf;}
+.unit-price input::-webkit-input-placeholder{color:#b6bbbf;}
+.input-search-task::-moz-placeholder{color:#b6bbbf;}
+.input-search-task::-webkit-input-placeholder{color:#b6bbbf;}
+.search-con .btn-search{
+	width: 80px;
+	height: 36px;
+	margin:-2px 0 0 0.833%;
+	border-color: #2ea0de;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.btn-search:link,
+.btn-search:visited,
+.btn-search:hover,
+.btn-search:active{
+	background: #2ea0de;
+	color: #fff;
+}
+/*领取状态下拉*/
+.order-status{
+	width: 13.333%;
+	line-height: 36px;
+	margin-left: 2%;
+}
+.con-top div input:focus{
+	border: 1px solid #66afe9;
+	box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+	transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	-moz-transition:all .4s ease;
+	-ms-transition:all .4s ease;
+	-o-transition:all .4s ease;
+}
+.order-status .dropdown{
+	width: 52.594%;
+}
+.dropdown .show-default{
+	display: block;
+	height: 34px;
+	line-height: 34px;
+	margin-left: 6px;
+}
+.dropdown .caret{
+	margin: 16px 6px 0 0;
+}
+.order-status .dropdown .dropdown-menu{
+	padding:0;
+	min-width: 92px!important;
+	width: 92px;
+	border-radius: 2px;
+}
+
+/*列表内容*/
+.task-list-con{
+	width: 93.75%;
+	min-width: 1200px;
+	background: #fff;
+	margin:14px auto 0;
+	padding: 0 6px;
+}
+.task-list-con table thead th{
+	height: 50px;
+	line-height: 34px;
+	text-align: center;
+	border-bottom: 1px solid #c0c5cb;
+}
+.task-list-con table tbody td{
+	height: 60px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 12px;
+}
+.task-list-con table tbody td div{
+	line-height: 20px;
+}
+.task-list-con table tbody td:nth-of-type(1) a{
+	display: block;
+	color:#2ea1e0;
+}
+.task-list-con table tbody tr:nth-of-type(2n+1){
+	background: #fbfbfb;
+}
+.task-list-con table tbody tr .operate{
+	position: relative;
+}
+.task-list-con table tbody tr .operate i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 23px;
+	left: 10px;
+	background: url(../../images/tui88-ghost.png) -94px -5px;
+}
+.task-list-con table tbody tr .operate span{
+	display: block;
+	line-height: 44px;
+	padding-left: 16px;
+	color: #bec3c7;
+}
+.task-list-con table tbody tr .operate span.click{
+	color: #2ea0de;
+	cursor: pointer;
+}
+.task-list-con table tbody tr .operate i.click{
+	background-position: -70px -5px;
+}
+/*分页样式*/
+.page-wb{
+	width: 93.75%;
+	min-width: 1200px;
+	margin:0 auto;
+	color:#999;
+	height:36px;
+	line-height:36px;
+}
+.page-wb .pagination{
+	margin-top: 0;
+}
+.page-wb a,
+.page-wb .next-step{
+	position:relative;
+	float:left;
+	margin-left:-1px;
+	display:inline-table;
+	padding:0 14px;
+	border:solid 1px #ededed;
+	height:34px;
+	color:#3e3e3e;
+	background: #ffffff;
+	text-align:center;
+	line-height:34px;
+	cursor:pointer;
+	-webkit-transition:all .1s linear;
+	 -moz-transition:all .1s linear;
+	  -o-transition:all .1s linear;
+	   transition:all .1s linear
+}
+.page-wb em{
+	width:19px;
+	height:34px;
+	line-height:34px;
+	font-weight:bold;
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+}
+.page-wb .on,
+.page-wb a:hover{
+	position:relative;
+	z-index:1;
+	background:#C81624;
+	color:#fff;
+	border-color:#C81624;
+	text-decoration:none
+}
+.page-wb .click_prev{}
+.page-wb .text{
+	border: solid 1px #ededed;
+	height: 35px;
+	text-align: center;
+	color:#999;
+	width: 52px;
+	padding: 5px
+}
+.page-wb .aok{
+	height:35px;
+	width:48px;
+	-webkit-border-radius:2px;
+	 -webkit-background-clip:padding-box;
+	  -moz-border-radius:2px;
+	   -moz-background-clip:padding;
+	border-radius:2px;
+	background-clip:padding-box;
+	border:solid 1px #ededed;
+	text-align:center;line-height:35px;
+	cursor:pointer;color:#404040;
+	background: #C81624;
+	color: #ffffff;
+}
+.page-wb .aok:hover {
+	color: #ffffff;
+	border-color: #C81624;
+}
+.page-wb i{
+	font-style:normal;
+	vertical-align: middle;
+	line-height: 35px;
+	margin: 0 10px;
+}
+/*~~~~~~~~~~~~~~~~~补充收款信息modal框~~~~~~~~~~~~~~~~~~*/
+.modal-header{
+	border-bottom: 1px solid #C0C5CB;
+}
+.modal-footer{
+	border: 0;
+}
+.modal-content{
+	height: 370px;
+	padding: 0 10px;
+}
+.modal-dialog{
+	width: 494px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -153px 0 0 -247px;
+}
+.modal-header span{
+	color: #36526A;
+}
+.modal-header span em{
+	color: #fe0000;
+	font-size: 12px;
+}
+.modal-header i.close{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	opacity: 1;
+	margin-top: 2px;
+	background: url("../../images/tui88-ghost.png") -122px -89px no-repeat;
+}
+.modal-header i.close:hover{
+	opacity: 1;
+}
+.modal-body{
+	margin-top: 24px;
+}
+.modal-body .info-group{
+	position: relative;
+	margin-bottom: 20px;
+}
+.modal-body .info-group input{
+	display: inline-block;
+	width:350px;
+	height: 36px;
+	font-size: 12px;
+}
+.modal-body .info-group span{
+	width: 70px;
+}
+.btn-submit,.btn-sure,.cancel{
+	display: inline-block;
+	width: 78px;
+	height: 36px;
+	text-align: center;
+	background: #2EA0DE;
+	color: #ffffff;
+	border: 0 none;
+	border-radius: 2px;
+}
+.btn-submit{
+	display: block;
+	margin: 4px auto 0;
+}
+/*确认领取任务modal*/
+#confirm-get-task .modal-content{
+	height: 230px;
+}
+#confirm-get-task .modal-header,
+#task-has-get .modal-header{
+	border-bottom: none;
+}
+#confirm-get-task .modal-body h3{
+	font-size: 20px;
+	font-weight: normal;
+}
+.task-name{
+	margin: 20px 0 18px 0;
+}
+.btn-sure{
+	margin-right: 48px;
+}
+.cancel{
+	margin-left: 48px;
+}
+/*任务领取成功modal*/
+#get-success .modal-content,
+#task-has-get .modal-content{
+	height: 134px;
+}
+#get-success .modal-dialog{
+	width: 494px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -77px 0 0 -247px;
+}
+#get-success .modal-header{
+	border-bottom: none;
+}
+#get-success .modal-body,
+#confirm-get-task .modal-body{
+	margin-top: 0;
+	padding-top: 0;
+	text-align: center;
+}
+#get-success .modal-body i,
+#task-has-get .modal-body i{
+	display: inline-block;
+	width: 54px;
+	height: 41px;
+	margin: -8px 18px 0 0;
+	background: url("../../images/tui88-ghost.png") 0 0 no-repeat;
+}
+#get-success .modal-body .get-tips {
+	display: inline-block;
+}
+.get-tips span{
+	display: block;
+}
+.get-tips span:nth-of-type(1){
+	font-size: 20px;
+	text-align: left;
+}
+/*任务已领取modal*/
+#task-has-get .modal-body{
+	text-align: center;
+	padding-top: 0;
+	margin-top: 10px;
+}
+#task-has-get .modal-body span{
+	font-size: 20px;
+}
+#task-has-get .modal-body span a{
+	font-size: 12px;
+	color: #2da1de;
+	border-bottom: 1px solid #2da1de;
+	display: inline-block;
+}
+#task-has-get .modal-body i{
+	vertical-align: middle;
+}
+/*暂无任务*/
+.no-task{
+	height: 300px;
+	text-align: center;
+	line-height: 300px;
+	color: #999ea4;
+}
+.get-task-num{
+	font-size: 12px;
+	margin-bottom: 26px;
+}
+.get-task-num input{
+	width: 50px;
+	height: 24px;
+	display: inline-block;
+	font-size: 12px;
+	padding-left: 4px;
+	border-radius: 0;
+	text-align: center;
+	border-color: #2EA0DE;
+}
+.get-task-num button{
+	width: 20px;
+	height: 24px;
+	line-height:24px;
+	border-radius: 0;
+}
+.get-task-num .reduce{
+	margin-left: 6px;
+}
+.get-task-num span{
+	color: #a3a3a3;
+	margin-left: 6px;
+}
+.get-task-num .max-task-num{
+	color: #2EA0DE;
+}

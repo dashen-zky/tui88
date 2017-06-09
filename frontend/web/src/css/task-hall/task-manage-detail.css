@@ -1,0 +1,80 @@
+/*
+    任务详情页面样式
+*/
+.execute-result-show li:nth-of-type(3){
+    margin-right: 0;
+}
+.main{
+    background: #eff4f7;
+    color: #39516B;
+    min-width: 1200px;
+    font-size: 12px;
+}
+.bread{
+    width: 96%;
+    min-width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.section{
+    width: 96%;
+    min-width: 1200px;
+    background: #fff;
+    margin: 0 auto 35px;
+}
+.exe-info-wrap{
+    padding: 30px 0;
+}
+.exe-info-top{
+    padding: 20px 10px;
+    margin:0 10px 50px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.exe-info-top li{
+    float: left;
+    width: 25%;
+}
+.exe-info-top li span{
+    margin-left: 10px;
+}
+.exe-info-wrap{
+    min-width: 1200px;
+}
+.exe-info-wrap .info-group{
+    margin-bottom: 18px;
+}
+.exe-info-wrap .info-group span:nth-of-type(1){
+    margin-left: 22px;
+}
+.exe-wrap-l{
+    width: 29.166%;
+    border-right: 2px solid #e5e5e5;
+}
+.task-name span:nth-of-type(2){
+    vertical-align: top;
+}
+.task-name span:nth-of-type(2){
+    display: inline-block;
+    max-width: 210px;
+    word-break: break-all;
+}
+.exe-wrap-r{
+    width: 63.66%;
+    padding-left: 50px;
+}
+.exe-wrap-r span:nth-of-type(2){
+    display: inline-block;
+    width: 82.568%;
+    border:1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 10px;
+}
+.exe-info-wrap .exe-wrap-r .title{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    vertical-align: top;
+}
+.footer{
+    min-width: 1200px;
+}

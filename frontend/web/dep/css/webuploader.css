@@ -1,0 +1,140 @@
+.webuploader-container {
+	position: relative;
+	display: inline-block;
+	border-radius: 4px;
+	overflow: hidden;
+	line-height: 28px;
+}
+.webuploader-container .btn{
+	padding: 0 10px;
+	line-height: 22px;
+	background-color: rgba(255, 100, 118, 0.62);
+	vertical-align: top;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: #00b7ee;
+	padding: 10px 15px;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.webuploader-pick-hover {
+	background: #00a2d4;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+
+.uploader-list div.file-panel span {
+	width: 24px;
+	height: 24px;
+	display: inline;
+	float: right;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(http://fex.baidu.com/webuploader/images/icons.png) no-repeat;
+	margin: 5px 1px 1px;
+	cursor: pointer;
+}
+
+.uploader-list div.file-panel span.cancel {
+	background-position: -48px -24px;
+}
+
+.uploader-list div.file-panel span.cancel:hover {
+	background-position: -48px 0;
+}
+
+.uploader-list div.file-panel {
+	position: absolute;
+	height: 0;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80000000', endColorstr='#80000000')\0;
+	background: rgba( 0, 0, 0, 0.5 );
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 300;
+}
+/*上传按钮*/
+.webuploader-container{
+	position:relative;
+}
+.webuploader-container .webuploader-element-invisible{
+	display: none;
+}
+.webuploader-container div{width: 100%;height: 100%;}
+.uploader-list{
+	padding: 3px;
+}
+.uploader-list div div{
+	vertical-align: middle;
+}
+.uploader-list .progress{
+	margin: 0;
+	overflow:visible ;
+}
+.uploader-list .error{display: inline-block;}
+/*图片名*/
+.uploader-list .imgName .imgName-wrap{display: inline-block;padding: 1px 0 1px 10px;}
+.uploader-list .imgName .progress{display: inline-block;}
+.uploader-list .imgName .imgName-wrap .delete-image {
+	float: right;
+	display: inline-block;
+	margin: 1px 1px 1px 4px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+/*图片*/
+.uploader-list .imgWrap {
+	position: relative;
+	z-index: 2;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 4px 4px 0;
+	overflow: hidden;
+	width: 110px;
+	height: 110px;
+
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	-webit-transition: 200ms ease-out;
+	-moz-transition: 200ms ease-out;
+	-o-transition: 200ms ease-out;
+	-ms-transition: 200ms ease-out;
+	transition: 200ms ease-out;
+}
+.uploader-list .imgWrap .delete-image{
+	position:absolute;
+	right:0;
+	top:0;
+	display: inline-block;
+	width:16px;
+	height:16px;
+	cursor: pointer;
+}
+.uploader-list .imgWrap img{width: 100%;}
+/*文件*/
+.uploader-list .file-list{display: inline-block;}
+.uploader-list .file-list .fill-cache{display: none;}
+.uploader-list .file-list .icon{display: inline-block;width: 30px;height: 26px;
+	background: url("../image/file.png") no-repeat center center;cursor: pointer;}
+.uploader-list .file-list .delete-image{display: none;}

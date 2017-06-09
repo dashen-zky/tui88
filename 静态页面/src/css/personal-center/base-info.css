@@ -1,0 +1,161 @@
+/*
+@name: tui88-base-info.css
+@author: maotingting
+*/
+.show{
+    display: block;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~内容部分~~~~~~~~~~~~~*/
+.content{
+    height: 98%;
+    margin-left: 248px;
+}
+.incontent{
+    width: 99%;
+    height: 90%;
+    /*padding-top: 50px;*/
+    background: #ffffff;
+    position: relative;
+}
+.form-con{
+    width: 510px;
+    font-size: 14px;
+    color: #36526A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -285px 0 0 -255px;
+}
+.form-con h3{
+    font-size: 16px;
+    text-align: center;
+    color: #3A5067;
+    line-height: 56px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+.info-group span:nth-of-type(1){
+    display: inline-block;
+    width: 96px;
+    text-align: right;
+    line-height: 44px;
+    margin-right: 10px;
+}
+.info-group input{
+    display: inline-block;
+    width: 348px;
+    height: 37px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.ph-num .amend{
+    margin-left: 20px;
+    color: #2EA0DE;
+    cursor: pointer;
+}
+.amend-sub-btn,
+.save-btn{
+    display: inline-block;
+    width: 78px;
+    height: 38px;
+    text-align: center;
+    background: #2EA0DE;
+    color: #ffffff;
+    border: 0 none;
+    border-radius: 2px;
+    margin: 34px 0 0 220px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~modal层修改手机号~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-header{
+    border-bottom: 1px solid #C0C5CB;
+}
+.modal-footer{
+    border: 0;
+}
+.modal-content{
+    height: 306px;
+    padding: 0 10px;
+}
+.modal-dialog{
+    width: 494px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -153px 0 0 -247px;
+}
+.modal-header span{
+    color: #36526A;
+}
+.modal-header i.close{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    margin-top: 2px;
+    background: url("../../images/tui88-ghost.png") -122px -89px no-repeat;
+}
+.modal-header i.close:hover{
+    opacity: 1;
+}
+.modal-body{
+    margin-top: 36px;
+}
+.modal-body .info-group{
+    position: relative;
+}
+.modal-body .info-group span{
+    width: 70px;
+}
+.test-code input{
+    width: 208px;
+}
+.test-code button{
+    display: inline-block;
+    width: 132px;
+    height: 38px;
+    text-align: center;
+    background: #2EA0DE;
+    color: #ffffff;
+    border: 0 none;
+    border-radius: 2px;
+}
+.error-alert{
+    color: #BF1F1F;
+    font-size: 12px;
+    position: absolute;
+    bottom: -13px;
+    left: 85px;
+    display: none;
+}
+.amend-sub-btn{
+    margin-left: 200px;
+}
+#amend-over .modal-content{
+    height: 134px;
+}
+#amend-over .modal-dialog{
+    width: 494px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -77px 0 0 -247px;
+}
+#amend-over .modal-header{
+    border-bottom: none;
+}
+#amend-over .modal-body{
+    margin-top: 0;
+    text-align: center;
+}
+#amend-over .modal-body i{
+    display: inline-block;
+    width: 54px;
+    height: 41px;
+    vertical-align: middle;
+    margin: -8px 18px 0 0;
+    background: url("../../images/tui88-ghost.png") 0 0 no-repeat;
+}
+#amend-over .modal-body span{
+    font-size: 20px;
+}

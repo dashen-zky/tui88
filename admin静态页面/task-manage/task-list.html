@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>任务列表</title>
+    <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../dep/css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/site-stage-common.css">
+    <link rel="stylesheet" href="../src/css/task-manage/task-list.css">
+</head>
+<body>
+<div class="header clearfix">
+    <h2 class="fl">TUI88后台ADMIN</h2>
+    <div class="personal-info fr">
+        <ul class="clearfix">
+            <li class="clearfix">
+                <i class="fl"></i>
+                <span class="user-name fl">荔枝</span>
+            </li>
+            <li><a href="javascript:;"><span class="msg-number">20</span></a></li>
+            <li><a class="logout color-fff" href="javascript:;">退出</a></li>
+        </ul>
+    </div>
+</div>
+<!-- 主要内容部分-->
+<div class="content-wrap clearfix">
+    <div class="sidebar fl">
+        <ul class="menu">
+            <li><a class="first-nav" href="#"><i></i><span>推客管理</span></a></li>
+            <li class="current-side-nav personal-setting">
+                <a class="first-nav" class="" href="#"><i></i><span>任务管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#">任务发布</a>
+                    <a href="#" class="current-list-nav">任务列表</a>
+                </div>
+            </li>
+            <li><a class="first-nav" href="#"><i></i><span>财务管理</span></a></li>
+        </ul>
+    </div>
+    <div class="content-r fl">
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">任务管理</a></li>
+                <li class="active">任务列表</li>
+            </ol>
+        </div>
+        <div class="con-header">
+            <div class="con-header-top clearfix">
+                <div class="order-status condition-area">
+                    <span class="title">领取状态:</span>
+                    <div class="dropdown  order-status-select-area">
+                        <div class="clearfix" data-toggle="dropdown">
+                            <span class="show-default fl">全部</span>
+                            <span class="caret fr"></span>
+                        </div>
+                        <ul class="dropdown-menu order-status-select" role="menu">
+                            <li data-status="0">全部</li>
+                            <li data-status="1">未开始</li>
+                            <li data-status="2">可领取</li>
+                            <li data-status="3">已结束</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="execute-status condition-area">
+                    <span class="title">执行状态:</span>
+                    <div class="dropdown  order-status-select-area">
+                        <div class="clearfix" data-toggle="dropdown">
+                            <span class="show-default fl">全部</span>
+                            <span class="caret fr"></span>
+                        </div>
+                        <ul class="dropdown-menu order-status-select" role="menu">
+                            <li data-status="0">全部</li>
+                            <li data-status="1">待执行</li>
+                            <li data-status="2">执行中</li>
+                            <li data-status="3">执行结束</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="publish-time condition-area">
+                    <span class="title">发布时间:</span>
+                    <input type="text" name="publish_start_time" value="" class="datetimepicker" readonly="readonly"> 至
+                    <input type="text" name="publish_end_time" value="" class="datetimepicker" readonly="readonly">
+                    <i class="start-icon"></i>
+                    <i class="end-icon"></i>
+                </div>
+            </div>
+            <div class="search-area">
+                <input class="search-input form-control" type="text" placeholder="请输入任务名称或任务编号进行搜索">
+                <button class="btn btn-search bg-main">搜索</button>
+            </div>
+        </div>
+        <div class="task-table">
+            <div class="task-tb-info table-wrap table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th width="120">任务编号</th>
+                        <th width="420">任务名称</th>
+                        <th width="100">任务金额</th>
+                        <th width="120">领取状态</th>
+                        <th width="120">执行状态</th>
+                        <th width="150">领取时间</th>
+                        <th width="150">执行时间</th>
+                        <th width="150">发布时间</th>
+                        <th width="100">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>待发布</div>
+                                <div></div>
+                            </td>
+                            <td>--</td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-modify" href="#" target="_blank">修改</a>
+                                <a class="btn-delete" href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>未开始</div>
+                                <div>0/20</div>
+                            </td>
+                            <td>
+                                <div>待执行</div>
+                                <div>0/0</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-stop" href="javascript:;">停止</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>可领取</div>
+                                <div>0/20</div>
+                            </td>
+                            <td>
+                                <div>执行中</div>
+                                <div>0/0</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-stop" href="javascript:;">停止</a>
+                                <a class="btn-order" href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>已结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>执行结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-order" href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td>
+                                <span class="abnormal">[异常]</span>
+                                <a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a>
+                            </td>
+                            <td>12312312</td>
+                            <td>
+                                <div>已结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>执行结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="stop" href="#" target="_blank">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>待发布</div>
+                                <div></div>
+                            </td>
+                            <td>--</td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-modify" href="#" target="_blank">修改</a>
+                                <a class="btn-delete" href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>未开始</div>
+                                <div>0/20</div>
+                            </td>
+                            <td>
+                                <div>待执行</div>
+                                <div>0/0</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-stop" href="javascript:;">停止</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>可领取</div>
+                                <div>0/20</div>
+                            </td>
+                            <td>
+                                <div>执行中</div>
+                                <div>0/0</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-stop" href="javascript:;">停止</a>
+                                <a class="btn-order" href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>已结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>执行结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-order" href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td>
+                                <span class="abnormal">[异常]</span>
+                                <a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a>
+                            </td>
+                            <td>12312312</td>
+                            <td>
+                                <div>已结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>执行结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="stop" href="#" target="_blank">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>待发布</div>
+                                <div></div>
+                            </td>
+                            <td>--</td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-modify" href="#" target="_blank">修改</a>
+                                <a class="btn-delete" href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>未开始</div>
+                                <div>0/20</div>
+                            </td>
+                            <td>
+                                <div>待执行</div>
+                                <div>0/0</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-stop" href="javascript:;">停止</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>可领取</div>
+                                <div>0/20</div>
+                            </td>
+                            <td>
+                                <div>执行中</div>
+                                <div>0/0</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-stop" href="javascript:;">停止</a>
+                                <a class="btn-order" href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>已结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>执行结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-order" href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td>
+                                <span class="abnormal">[异常]</span>
+                                <a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a>
+                            </td>
+                            <td>12312312</td>
+                            <td>
+                                <div>已结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>执行结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="stop" href="#" target="_blank">查看</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>待发布</div>
+                                <div></div>
+                            </td>
+                            <td>--</td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-modify" href="#" target="_blank">修改</a>
+                                <a class="btn-delete" href="javascript:;">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>未开始</div>
+                                <div>0/20</div>
+                            </td>
+                            <td>
+                                <div>待执行</div>
+                                <div>0/0</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-stop" href="javascript:;">停止</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="#" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>可领取</div>
+                                <div>0/20</div>
+                            </td>
+                            <td>
+                                <div>执行中</div>
+                                <div>0/0</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-stop" href="javascript:;">停止</a>
+                                <a class="btn-order" href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td><a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a></td>
+                            <td>12312312</td>
+                            <td>
+                                <div>已结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>执行结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="btn-order" href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1121</td>
+                            <td>
+                                <span class="abnormal">[异常]</span>
+                                <a class="plain-text-length-limit" data-limit="16" href="task-manage-detail.html" target="_blank">双十一品牌暗恋谁看见啊佳世达垃圾爱上了较大拉四季度垃圾辣椒水的</a>
+                            </td>
+                            <td>12312312</td>
+                            <td>
+                                <div>已结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>执行结束</div>
+                                <div>20/20</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                <div>2016.12.31 12:30</div>
+                                <div>2016.12.31 12:30</div>
+                            </td>
+                            <td>
+                                2016.12.31 12:30
+                            </td>
+                            <td class="operation">
+                                <a class="stop" href="#" target="_blank">查看</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="no-task">暂无任务</div>
+            </div>
+            <div class="page-wb system_page clearfix" data-value="20287">
+                <ul class="pagination fr"><li class="disabled"><a>首页</a></li>
+                    <li class="prev disabled"><a>上一页</a></li>
+                    <li class="active"><a data-page="0" style="cursor: pointer;">1</a></li>
+                    <li><a data-page="1" style="cursor: pointer;">2</a></li>
+                    <li><a data-page="2" style="cursor: pointer;">3</a></li>
+                    <li><a data-page="3" style="cursor: pointer;">4</a></li>
+                    <li><a data-page="4" style="cursor: pointer;">5</a></li>
+                    <li><a data-page="1" style="cursor: pointer;">下一页</a></li>
+                    <li class="last"><a data-page="2028" style="cursor: pointer;">尾页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../dep/js/jquery.datetimepicker.js"></script>
+<script src="../dep/js/datetime.js"></script>
+<script src="../dep/layer/layer.js"></script>
+<script src="../dep/plupload/plupload.full.min.js"></script>
+<script src="../dep/js/wom-uploader.js"></script>
+<script src="../dep/js/tui88-tool.js"></script>
+<script src="../src/js/site-stage-common.js"></script>
+<script src="../src/js/task-manage/task-list.js"></script>
+</body>
+</html>

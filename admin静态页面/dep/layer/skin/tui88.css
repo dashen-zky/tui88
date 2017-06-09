@@ -1,0 +1,73 @@
+/*!
+ title: wom提示框样式
+ @Name: wom-alert style
+ @Author: wom
+ */
+
+/** 消息提示框样式 **/
+.layui-layer{
+	border-radius: 6px;
+}
+.layui-layer .layui-layer-content{
+	text-align: center;
+    font-weight: normal;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~消息提示框样式~~~~~~~~~~~~~~~~~~~~~~~*/
+.layui-layer-msg{
+    height: 100px;
+}
+.layui-layer-msg .layui-layer-content{
+    font-weight: normal;
+    font-size: 20px;
+    padding:0 20px;
+    line-height: 100px;
+}
+.layui-layer-dialog{
+    min-width: 300px;
+}
+.layui-layer-dialog .layui-layer-content .layui-layer-ico{
+    top: 36px;
+    left: 15px;
+}
+.layui-layer-dialog .layui-layer-content{
+    overflow:hidden;
+    font-size: 14px;
+    padding: 40px;
+}
+.layui-layer-hui{
+    background-color: rgba(68,76,99,.8);
+}
+.layui-layer-hui .layui-layer-content{
+    padding: 0;
+}
+.layui-layer-btn{
+    padding-bottom: 22px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~消息确认框样式~~~~~~~~~~~~~~~~~~~~~~~*/
+/*标题和关闭icon*/
+.layui-layer-title,
+.layui-layer-setwin{
+    display: none;
+}
+.layui-layer .layui-layer-btn{
+    text-align: center;
+}
+.layui-layer .layui-layer-btn a{
+    line-height: 28px;
+    border-radius: 4px;
+    margin: 0 26px;
+    font-size: 14px;
+}
+.layui-layer .layui-layer-btn .layui-layer-btn0,
+.layui-layer .layui-layer-btn .layui-layer-btn1{
+    width: 78px;
+    height: 30px;
+    line-height: 30px;
+    background: #428ce5;
+    border-color: #428ce5;
+}
+.layui-layer .layui-layer-btn .layui-layer-btn1{
+    background: #428ce5;
+    border-color: #428ce5;
+    color: #fff;
+}

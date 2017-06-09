@@ -1,0 +1,143 @@
+/*
+    任务发布页面样式
+*/
+
+.task-base-setting .fill-area{
+    width: 430px;
+}
+.task-base-setting .task-unit-price{
+    width: 560px;
+}
+.task-base-setting input{
+    width: 146px;
+}
+.task-base-setting input::-moz-placeholder{color:#b6bbbf;}
+.task-base-setting input::-webkit-input-placeholder{color:#b6bbbf;}
+/*任务基础设置*/
+.customer-account input{
+    width: 311px;
+}
+.total-price{
+    margin-left: 28px;
+}
+.total-price i{
+    color: #2ea0de;
+}
+.content-r{
+    font-size: 12px;
+}
+/*任务内容设置*/
+.task-name input{
+    width:360px;
+}
+/*任务提交内容*/
+.task-submit{
+    padding-left: 27px;
+}
+.task-submit input{
+   height: 12px;
+    margin-right: 6px;
+}
+.task-submit ul{
+    margin-bottom: 20px;
+}
+.task-submit li{
+    float: left;
+    margin-right:118px;
+}
+.tips{
+    text-align: right;
+    color: #d91516;
+    margin-top: 2px;
+}
+label{
+    font-weight: normal;
+    line-height: 53.5px !important;
+    cursor: pointer;
+}
+textarea{
+    width: 702px;
+    outline:none;
+    resize: none;
+    border-radius: 2px;
+    padding:8px 8px;
+    margin-left: 5px;
+    border: 1px solid #dddddd;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.task-con-setting textarea{
+    height: 260px;
+}
+#editor{
+    display: inline-block;
+    width: 702px;
+    height: 400px;
+    margin-left: 5px;
+}
+.fill-area .edui-default .edui-editor{
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+#edui1_bottombar{
+    display: none;
+}
+.task-con-setting .remark textarea{
+    height:160px;
+}
+.task-con-setting textarea:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.btn-section{
+    width: 240px;
+    height: 30px;
+    margin:16px auto;
+}
+.btn-section button{
+    width: 96px;
+    height: 36px;
+    background: #2ea0de;
+    color: #fff;
+    line-height: 16px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.btn-section button:hover,
+.btn-section button:link,
+.btn-section button:visited,
+.btn-section button:hover,
+.btn-section button:active,
+.btn-section button:focus{
+    color: #fff;
+}
+.btn-section .save-draft{
+    margin-right: 42px;
+}
+.receive-time,.execute-time{
+    position: relative;
+}
+.receive-time i,.execute-time i{
+    display: block;
+    position: absolute;
+    top:10px;
+    width: 18px;
+    height: 18px;
+    background: url("../../images/tui88-ghost.png") 0 -380px no-repeat;
+}
+.receive-time i.start-icon,
+.execute-time i.start-icon{
+    left: 236px;
+}
+.receive-time i.end-icon,
+.execute-time i.end-icon{
+    left: 398px;
+}

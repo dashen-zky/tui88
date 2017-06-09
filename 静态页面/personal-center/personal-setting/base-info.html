@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>基础信息</title>
+	<link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+	<link rel="stylesheet" href="../../src/css/reset.css">
+	<link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+	<link rel="stylesheet" href="../../src/css/personal-center/base-info.css">
+</head>
+<body>
+	<!--未登录状态下的头部导航-->
+	<div class="header clearfix" style="display: none">
+		<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+		<div class="unlogin fr">
+			<a href="#">注册</a>
+			<a href="#">登录</a>
+			<a href="#" style="display: none">返回登录</a>
+		</div>
+	</div>
+	<!--登录状态下的头部导航-->
+	<div class="header clearfix">
+		<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+		<div class="nav fl">
+			<a href="#" class="current-nav">个人中心</a>
+			<a href="#">任务大厅</a>
+		</div>
+		<div class="enter fr">
+			<a href="#">欢迎您，荔枝</a>
+			<a href="#">帮助中心</a>
+			<a href="#">退出</a>
+		</div>
+	</div>
+	<!-- 主要内容部分-->
+	<div class="main clearfix">
+		<div class="sidebar fl">
+			<h2 class="font-18">推客中心</h2>
+			<ul class="menu">
+				<li><a class="first-nav" href="#"><i></i><span>任务管理</span><em>0</em></a></li>
+				<li class="current-side-nav personal-setting">
+					<a class="first-nav" class="" href="#"><i></i><span>个人设置</span><em></em></a>
+					<div class="menu-list">
+						<a href="#" class="current-list-nav">基础信息</a>
+						<a href="#">修改登录密码</a>
+						<a href="#">收款方式</a>
+					</div>
+				</li>
+				<li><a class="first-nav" href="#"><i></i><span>财务管理</span></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<!-- 面包屑 -->
+			<div class="bread">
+				<ol class="breadcrumb font-500">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">推客中心</a></li>
+					<li><a href="#">个人设置</a></li>
+					<li class="active">基础信息</li>
+				</ol>
+			</div>
+			<div class="incontent">
+				<form action="" class="form-con">
+					<h3>基础信息</h3>
+					<div class="info-group">
+						<span>昵称：</span>
+						<input type="text" class="form-control">
+					</div>
+					<div class="info-group">
+						<span>注册时间：</span>
+						<span>2017.02.22</span>
+					</div>
+					<div class="info-group mb-10">
+						<span>所在地：</span>
+						<input type="text" class="form-control">
+					</div>
+					<div class="info-group">
+						<span>联系人：</span>
+						<input type="text" class="form-control">
+					</div>
+					<div class="info-group ph-num">
+						<span>手机：</span>
+						<span>18439409306</span>
+						<span class="amend" data-toggle="modal" data-target="#amend-ph-num">修改</span>
+					</div>
+					<div class="info-group mb-10">
+						<span>微信号：</span>
+						<input type="text" class="form-control">
+					</div>
+					<div class="info-group">
+						<span>QQ：</span>
+						<input type="text" class="form-control">
+					</div>
+					<input type="submit" class="save-btn" value="保存">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 底部-->
+	<div class="footer">
+		copyright@tui88.com版权所有
+	</div>
+	<!-- 修改手机号modal层-->
+	<div id="amend-ph-num" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl">修改手机号</span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<!--<form action="" class="amend-form">-->
+						<div class="info-group new-ph-num mb-10">
+							<span>新手机号：</span>
+							<input type="text" class="form-control">
+							<p class="error-alert">请输入手机号码</p>
+						</div>
+						<div class="info-group test-code">
+							<span>验证码：</span>
+							<input type="text" class="form-control verify-code">
+							<button class="get-code">获取验证码</button>
+							<p class="error-alert">请输入手机验证码</p>
+						</div>
+						<button class="amend-sub-btn" data-toggle="modal" data-target="#amend-over"  data-dismiss="modal">提交</button>
+					<!--</form>-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 修改完成-->
+	<div id="amend-over" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl"></span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<i></i>
+					<span>修改完成！</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+	<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+	<script src="../../src/js/personal-center/base-info.js"></script>
+	<script src="../../src/js/sidebar-common.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+.main-wrap{
+    background: #eff4f7;
+}
+.main-con{
+    width: 90%;
+    min-height: 780px;
+    background: #fff;
+    margin: 35px auto;
+    position: relative;
+}
+.main-con .reset-psd-con{
+    width:600px;
+    height: 336px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: -268px 0 0 -300px;
+}
+.reset-psd-con .step-con{
+    margin-bottom: 52px;
+}
+.reset-psd-con .step{
+    position: relative;
+}
+.reset-psd-con .step span{
+    display: block;
+}
+.reset-psd-con .step .func{
+    text-align: center;
+    margin-top: 24px;
+    color: #b1b1b1;;
+}
+.reset-psd-con .step .line{
+    width: 300px;
+    height: 4px;
+    background: #b1b1b1;
+}
+.reset-psd-con .step .ball{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height:26px;
+    position: absolute;
+    top: -11px;
+    left:137px;
+    background: #b1b1b1;
+}
+.reset-psd-con .step-one .line{
+    border-radius:2px 0 0 2px;
+}
+.reset-psd-con .step-two .line{
+    border-radius:0 2px 2px 0;
+}
+.reset-psd-con .step .func.color-on-step{
+    color: #2ea0de!important;
+}
+.bg-on-step{
+    background: #2ea0de!important;
+}
+.reset-psd-con .input-group span{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+.content .input-group{
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 80px;
+}
+.content .input-group .tips{
+    position: absolute;
+    bottom: -18px;
+    left: 82px;
+    font-size: 12px;
+    color: #c61620;
+    padding: 0 10px;
+    background: #fff;
+    display: none;
+}
+.content .code-insure .tips{
+    bottom: -18px;
+    right: 150px;
+}
+.content .input-group .title{
+    display: inline-block;
+    width: 82px;
+    text-align: right;
+    font-size: 14px;
+    color: #1e1e1e;
+    position: relative;
+}
+.content .input-group input{
+    width: 350px;
+    height: 36px;
+    font-size: 12px;
+    outline:none;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    text-indent: 1em;
+    margin-left: 10px;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .input-group input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .code-insure .title i{
+    left: -6px;
+}
+.content .code-insure input{
+    width: 212px;
+}
+.content .code-insure .get-code,
+.content .code-insure .unclick{
+    display: inline-block;
+    width: 132px;
+    height: 36px;
+    float: right;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+.content .code-insure .unclick{
+    background: #395169;
+    display: none;
+}
+.content .next-step,
+.content .affirm-submit{
+    display: block;
+    width: 100px;
+    height: 36px;
+    line-height: 24px;
+    margin: 30px auto 0;
+}
+.content .next-step:hover,
+.content .affirm-submit:hover{
+    color: #fff;
+}
+.content .next-step:visited,
+.content .affirm-submit:visited{
+    color: #fff;
+}
+.content .next-step:link,
+.content .affirm-submit:link{
+    color: #fff;
+}
+

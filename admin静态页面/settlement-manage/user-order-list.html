@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>结算管理-订单列表</title>
+        <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+        <link rel="stylesheet" href="../dep/css/jquery.datetimepicker.css">
+        <link rel="stylesheet" href="../src/css/reset.css">
+        <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+        <link rel="stylesheet" href="../src/css/site-stage-common.css">
+        <link rel="stylesheet" href="../src/css/settlement-manage/user-order-list.css">
+    </head>
+    <body>
+        <div class="header clearfix">
+            <h2 class="fl">TUI88后台ADMIN</h2>
+            <div class="personal-info fr">
+                <ul class="clearfix">
+                    <li class="clearfix">
+                        <i class="fl"></i>
+                        <span class="user-name fl">荔枝</span>
+                    </li>
+                    <li><a href="javascript:;"><span class="msg-number">20</span></a></li>
+                    <li><a class="logout color-fff" href="javascript:;">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 主要内容部分-->
+        <div class="main-wrap clearfix">
+            <!-- 面包屑 -->
+            <div class="bread">
+                <ol class="breadcrumb font-500">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">结算管理</a></li>
+                    <li><a href="#">结算</a></li>
+                    <li class="active">订单列表</li>
+                </ol>
+            </div>
+            <div class="content-h clearfix">
+                <div class="user-phone fl">
+                    用户手机号: 15001728372
+                </div>
+                <div class="confirm-time fl">
+                    确认时间: <input type="text" name="confirm_start_time" value="" class="datetimepicker" readonly="readonly" placeholder="请选择开始时间"> 至
+                    <input type="text" name="confirm_end_time" value="" class="datetimepicker" readonly="readonly" placeholder="请选择结束时间">
+                    <i class="start-icon"></i><i class="end-icon"></i>
+                </div>
+                <input class="input-search" type="text" placeholder="请输入任务名称或订单编号进行搜索" />
+                <button class="btn btn-search bg-main">搜索</button>
+            </div>
+            <div class="total-info clearfix">
+                <span>共 <i>667</i> 条信息</span>
+                <div class="fr">
+                    <span>已选择 <i>34</i> 个订单，总金额为￥<i>230.09</i></span>
+                    <button class="btn-settlement btn bg-main">结算</button>
+                </div>
+            </div>
+            <div class="task-table">
+                <div class="task-tb-info table-wrap table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th width="80"><input type="checkbox"></th>
+                            <th width="150">订单编号</th>
+                            <th width="320">任务名称</th>
+                            <th width="150">确认时间</th>
+                            <th width="150">任务金额</th>
+                            <th width="150">确认金额</th>
+                            <th width="150">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>201189019882938</td>
+                                <td><a class="plain-text-length-limit" data-limit="20" href="#" target="_blank">双十一品牌阿萨德昂两件事了加拉斯加了加沙拉酱辣椒水啦爱上</a></td>
+                                <td>2011.09.12 23:12</td>
+                                <td>3.99</td>
+                                <td>2.99</td>
+                                <td class="operate">
+                                    <a href="#" target="_blank">详情</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="no-task">暂无订单</div>
+                </div>
+                <div class="page-wb system_page clearfix" data-value="20287">
+                    <ul class="pagination fr"><li class="disabled"><a>首页</a></li>
+                        <li class="prev disabled"><a>上一页</a></li>
+                        <li class="active"><a data-page="0" style="cursor: pointer;">1</a></li>
+                        <li><a data-page="1" style="cursor: pointer;">2</a></li>
+                        <li><a data-page="2" style="cursor: pointer;">3</a></li>
+                        <li><a data-page="3" style="cursor: pointer;">4</a></li>
+                        <li><a data-page="4" style="cursor: pointer;">5</a></li>
+                        <li><a data-page="1" style="cursor: pointer;">下一页</a></li>
+                        <li class="last"><a data-page="2028" style="cursor: pointer;">尾页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="../dep/js/jquery-1.10.2.min.js"></script>
+        <script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+        <script src="../dep/js/jquery.datetimepicker.js"></script>
+        <script src="../dep/js/datetime.js"></script>
+        <script src="../dep/layer/layer.js"></script>
+        <script src="../dep/js/tui88-tool.js"></script>
+        <script src="../src/js/settlement-manage/user-order-list.js"></script>
+    </body>
+</html>

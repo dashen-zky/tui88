@@ -1,0 +1,188 @@
+/*
+@name: tui88-common.css
+@author: maotingting
+*/
+/*~~~~~~~~~~~~~~~~~~~~~头部导航~~~~~~~~~~~~~~~~~~~~*/
+.header{
+	width: 100%;
+	min-width: 1100px;
+	height: 72px;
+	background: #FFFFFF;
+}
+.header h1 a{
+	text-indent: -99999px;
+	display: block;
+	width: 166px;
+	height: 45px;
+	margin: 14px 0 0 20px;
+	background: url("../images/logo.png") 0 0 no-repeat;
+}
+.unlogin{
+	margin-right: 70px;
+}
+.unlogin a{
+	color: #2DA1DE;
+	margin-left: 34px;
+	font-size: 12px;
+	line-height: 72px;
+}
+/*.back-login{
+	display: none;
+}*/
+.nav{
+	margin-left: 146px;
+}
+.nav a{
+	display: inline-block;
+	padding: 0 18px;
+	line-height: 69px;
+	margin-right: 70px;
+	color: #3C5069;
+	transition: all 0.2s;
+}
+.nav a:hover,
+.current-nav{
+	border-bottom: 3px solid #2EA0DE;
+}
+.enter{
+	margin-right: 40px;
+}
+.enter a{
+	line-height: 72px;
+	color: #9E9E9E;
+	font-size: 12px;
+	margin-left: 54px;
+}
+.enter a:hover{
+	color: #2EA0DE;
+}
+/*~~~~~~~~~~~~~~~~~~~~侧边栏样式~~~~~~~~~~~~~~~*/
+.main{
+	width: 100%;
+	background: #EFF4F7;
+	min-height: 900px;
+	height: 900px;
+	min-width: 1200px;
+	padding-top: 1px;
+}
+.sidebar{
+	width: 12%;
+	min-width: 228px;
+	height: 100%;
+	background: #395169;
+}
+.sidebar h2{
+	line-height: 50px;
+	margin-top: 20px;
+	color: #ffffff;
+	padding-left: 18px;
+}
+.sidebar a{
+	display: block;
+	line-height: 48px;
+	color: #9AADBC;
+	padding-left: 18px;
+}
+.menu li a i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin-right: 8px;
+	background: url("../images/tui88-ghost.png") 0 -63px no-repeat;
+}
+.menu li:nth-of-type(1) a em{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	color: #ffffff;
+	background: #BF1F1F;
+	margin-left: 10px;
+	line-height: 16px;
+	text-align: center;
+	font-size: 12px;
+}
+.menu li:nth-of-type(2) a em{
+	display: inline-block;
+	width: 8px;
+	height: 5px;
+	margin-left: 72px;
+	vertical-align: middle;
+	background: url("../images/tui88-ghost.png") -64px -71px no-repeat;;
+}
+.menu li:nth-of-type(2) a i{
+	background-position: 0 -90px;
+}
+.menu li:nth-of-type(3) a i{
+	background-position: 0 -118px;
+}
+li a:hover,
+.current-side-nav .first-nav{
+	background: #2F4052;
+	color: #ffffff;
+}
+.menu-list{
+	display: none;
+}
+li:nth-of-type(2).current-side-nav a em{
+	background-position: -64px -63px;
+}
+.current-side-nav .menu-list{
+	display: block;
+}
+.menu-list a{
+	padding-left: 42px;
+}
+li:hover a.first-nav,
+li.current-side-nav a.first-nav{
+	color: #ffffff;
+}
+li:hover a.first-nav i,
+li.current-side-nav a i{
+	background: url("../images/tui88-ghost.png") -27px -63px no-repeat;
+}
+li:nth-of-type(2):hover a i,
+li:nth-of-type(2).current-side-nav a i{
+	background-position:  -27px -90px;
+}
+li:nth-of-type(3):hover a i,
+li:nth-of-type(3).current-side-nav a i{
+	background-position:  -27px -118px;
+}
+.menu-list .current-list-nav
+{
+	color: #ffffff;
+	background: #2F4052;
+}
+.footer{
+	width: 100%;
+	height: 42px;
+	background: #F3F3F3;
+	text-align: center;
+	color: #000000;
+	line-height: 42px;
+	border-top: 1px solid #D7DBDE;
+}
+.bread{
+	margin-top: 12px;
+}
+.breadcrumb > li + li::before {
+	color: #333;
+	content: "> ";
+	padding: 0;
+}
+.breadcrumb{
+	padding: 0;
+	background: #EFF4F7;
+	line-height: 40px;
+	margin-bottom: 0;
+}
+.breadcrumb li a,
+.breadcrumb li a:hover{
+	color: #2F414F;
+	background: #EFF4F7;
+}
+.breadcrumb .active{
+	color: #2EA0DE;
+}

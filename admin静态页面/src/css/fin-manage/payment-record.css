@@ -1,0 +1,282 @@
+/*
+	付款记录样式
+*/
+
+/*~~~~~~内容部分~~~~~*/
+.content-r{
+    padding: 0 0 0 1.233%;
+}
+.con-header{
+    background: #e6efee;
+    border:1px solid #dedede;
+    border-radius: 2px;
+    padding:12px 0 12px 22px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    min-width: 980px;
+}
+.settlement-time{
+    position: relative;
+}
+.settlement-time i{
+    display: block;
+    position: absolute;
+    top:10px;
+    width: 18px;
+    height: 18px;
+    background: url("../../images/tui88-ghost.png") 0 -380px no-repeat;
+}
+.settlement-time i.start-icon{
+    left: 172px;
+}
+.settlement-time i.end-icon{
+    left: 334px;
+}
+.amount-money-collection{
+    margin-left: 30px;
+}
+.settlement-time input,
+.amount-money-collection input{
+    width: 142px;
+    height: 36px;
+    outline: none;
+    border-radius: 4px;
+    padding: 0 8px;
+    border: 1px solid #dddddd;
+}
+.amount-money-collection input{
+    width: 120px;
+}
+.settlement-time input:focus,
+.amount-money-collection input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-header .search-area{
+    margin-left:20px;
+}
+.con-header .search-input{
+    display: inline-block;
+    width: 200px;
+    height: 36px;
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.con-header .btn-search{
+    width: 66px;
+    height: 36px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: -4px 0 0 12px;
+}
+.total-account{
+    font-size: 12px;
+}
+.total-account span{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+}
+@media screen and (max-width: 1280px) {
+    .con-header{padding-left: 12px;}
+    .con-header .amount-money-collection,
+    .con-header .search-area{
+        margin-left: 4px;
+    }
+}
+/*~~~~~~~~~~表格部分~~~~~~~~~~*/
+.task-table table{
+    width: 100%;
+    text-align: center;
+    line-height: 58px;
+    background: #FFFFFF;
+    border:1px solid #dedede;
+}
+.task-table thead th{
+    text-align: center;
+    border-bottom: 1px solid #EBEDEC;
+    background: #e6efee;
+}
+.task-table tbody td{
+    font-size: 12px;
+    border-bottom: 1px solid #EBEDEC;
+}
+.task-table tbody .operate a{
+    margin-right: 4px;
+}
+.task-table tbody td a:hover,
+.task-table tbody td a:visited,
+.task-table tbody td a:active,
+.task-table tbody td a{
+    color: #2F9FDF;
+}
+thead th span{
+    height: 11px;
+    display: inline-block;
+    margin-left: 8px;
+}
+thead th span i{
+    display: block;
+    width: 8px;
+    height: 5px;
+    background: url("../../images/admin-ghost.png") no-repeat;
+    cursor: pointer;
+}
+thead th span i:nth-of-type(1){
+    background-position: -69px -5px;
+}
+thead th span i:nth-of-type(2){
+    margin-top: 2px;
+    background-position: -69px -11px;
+}
+thead th span i.up-choosed{
+    background-position: -82px -5px;
+}
+thead th span i.down-choosed{
+    background-position: -95px -11px;
+}
+.operation{
+    width: 230px;
+}
+.operation a{
+    margin-right: 10px;
+}
+.task-list-con table tbody td div {
+    line-height: 20px;
+}
+.table-wrap{
+    margin-bottom: 0;
+}
+.btn{
+    width: 78px;
+    height: 36px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:link{
+    color: #fff!important;
+}
+/*暂无任务*/
+.no-task{
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: #999ea4;
+    border:1px solid #EBEDEC;
+    display: none;
+}
+/*===== modal样式 =====*/
+.modal-header{
+    border-bottom: 1px solid #C0C5CB;
+}
+.modal-footer{
+    border: 0;
+}
+.modal-content{
+    padding: 0 10px;
+}
+.modal-dialog{
+    width: 602px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -264px 0 0 -301px;
+}
+.modal-dialog .modal-body,
+.modal-dialog .modal-body button,
+.modal-dialog .modal-body a{
+    font-size: 12px;
+}
+.modal-dialog .modal-footer a{
+    font-size: 12px;
+}
+.modal-header span{
+    color: #36526A;
+    font-weight: 500;
+}
+.modal-header i.close{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    margin-top: 2px;
+    background: url("../../images/tui88-ghost.png") -122px -89px no-repeat;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
+    transition:.5s;
+}
+.modal-header i.close:hover{
+    opacity: 1;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*=== 凭证modal样式 ===*/
+.configuration-item{
+    color: #38526B;
+}
+#proof .configuration-item li{
+    margin-bottom: 20px;
+}
+.pic{
+    display: inline-block;
+    width: 482px;
+    margin-left: -2px;
+}
+.pic-show span{
+    color: #38526B;
+    vertical-align: top;
+}
+.pic img{
+    width: 108px;
+    height: 132px;
+    border: 1px solid #C0C5CB;
+    border-radius: 4px;
+    vertical-align: top;
+    margin:8px 8px 0 0;
+}
+.remarks{
+    line-height: 22px;
+    margin: 20px 0 0 4px;
+}
+.remarks span:nth-of-type(2){
+    display: inline-block;
+    width: 478px;
+}
+#proof .modal-body{
+    max-height: 530px;
+    overflow-y: scroll;
+}
+#proof .title{
+    display: inline-block;
+    width: 54px;
+    text-align: right;
+    margin-right: 12px;
+}
+.modify-account input{
+    display: inline-block;
+    width: 204px;
+    height: 36px;
+}
+.modify-account .task-account{
+    margin-left: 18px;
+    color:#a0a2ae;
+}

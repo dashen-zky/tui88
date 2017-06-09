@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>修改密码</title>
+	<link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+	<link rel="stylesheet" href="../../src/css/reset.css">
+	<link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+	<link rel="stylesheet" href="../../src/css/personal-center/amend-psd.css">
+</head>
+<body>
+	<!--未登录状态下的头部导航-->
+	<div class="header clearfix" style="display: none">
+		<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+		<div class="unlogin fr">
+			<a href="#">注册</a>
+			<a href="#">登录</a>
+			<a href="#" style="display: none">返回登录</a>
+		</div>
+	</div>
+	<!--登录状态下的头部导航-->
+	<div class="header clearfix">
+		<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+		<div class="nav fl">
+			<a href="#" class="current-nav">个人中心</a>
+			<a href="#">任务大厅</a>
+		</div>
+		<div class="enter fr">
+			<a href="#">欢迎您，荔枝</a>
+			<a href="#">帮助中心</a>
+			<a href="#">退出</a>
+		</div>
+	</div>
+	<!-- 主要内容部分-->
+	<div class="main clearfix">
+		<div class="sidebar fl">
+			<h2 class="font-18">推客中心</h2>
+			<ul class="menu">
+				<li><a class="first-nav" href="#"><i></i><span>任务管理</span><em>0</em></a></li>
+				<li class="current-side-nav personal-setting">
+					<a class="first-nav" class="" href="#"><i></i><span>个人设置</span><em></em></a>
+					<div class="menu-list">
+						<a href="#">基础信息</a>
+						<a href="#" class="current-list-nav">修改登录密码</a>
+						<a href="#">收款方式</a>
+					</div>
+				</li>
+				<li><a class="first-nav" href="#"><i></i><span>财务管理</span></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<!-- 面包屑 -->
+			<div class="bread">
+				<ol class="breadcrumb font-500">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">推客中心</a></li>
+					<li><a href="#">个人设置</a></li>
+					<li class="active">修改登录密码</li>
+				</ol>
+			</div>
+			<div class="incontent">
+				<form action="" class="form-con">
+					<h3>修改登录密码</h3>
+					<div class="info-group org-psd mb-10">
+						<span>原登录密码：</span>
+						<input type="text" class="form-control" placeholder="请输入原密码">
+						<p class="error-alert">请输入原密码</p>
+					</div>
+					<div class="info-group new-psd mb-10">
+						<span>新设密码：</span>
+						<input type="text" class="form-control" placeholder="请输入6-20位字母或数字">
+						<p class="error-alert">请输入新密码</p>
+					</div>
+					<div class="info-group confir-new-psd">
+						<span>确认新密码：</span>
+						<input type="text" class="form-control" placeholder="请再次输入密码">
+						<p class="error-alert">请再次输入密码</p>
+					</div>
+					<input type="submit" class="save-btn sub-btn" value="提交">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 底部-->
+	<div class="footer">
+		copyright@tui88.com版权所有
+	</div>
+	<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+	<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+	<script src="../../src/js/sidebar-common.js"></script>
+	<script src="../../src/js/personal-center/amend-psd.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/*
+	用户列表样式
+*/
+.show{
+    display: block;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分~~~~~~~~~~~~~~~~~~~~~*/
+.content-r{
+    padding: 0 0 0 1.233%;
+}
+.con-header{
+    background: #e6efee;
+    border:1px solid #dedede;
+    border-radius: 2px;
+    padding:16px 0 14px 12px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.con-header .title{
+    margin-right: 8px;
+}
+.condition-area{
+    line-height: 34px;
+    float: left;
+    margin-right: 38px;
+}
+.dropdown{
+    width:124px;
+    height: 36px;
+    margin:0 8px 0 0;
+    background: #fff;
+}
+.dropdown-menu{
+    padding:0;
+}
+.dropdown .show-default{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 6px;
+}
+.dropdown .caret{
+    margin: 14px 6px 0 0;
+}
+.dropdown-menu{
+    min-width: 124px;
+}
+.condition-area:nth-of-type(3){
+    margin-right: 0;
+}
+.order-status-select-area{
+    display: inline-block;
+}
+.order-status-select li{
+    font-size: 12px;
+}
+.condition-area .title{
+    vertical-align: top;
+}
+.condition-selected{
+    display: inline-block;
+    margin-left: 16px;
+}
+.con-header-top label{
+    margin-left: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.con-header-top label:nth-of-type(1){
+    margin-left: 0;
+}
+.regist-time{
+    position: relative;
+}
+.regist-time i{
+    display: block;
+    position: absolute;
+    top:10px;
+    width: 18px;
+    height: 18px;
+    background: url("../../images/tui88-ghost.png") 0 -380px no-repeat;
+}
+.regist-time i.start-icon{
+    left: 194px;
+}
+.regist-time i.end-icon{
+    left: 370px;
+}
+.con-header-bot input{
+    width: 156px;
+    height: 36px;
+    outline: none;
+    border-radius: 2px;
+    padding: 0 8px;
+    border: 1px solid #dddddd;
+}
+.con-header-bot input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-header-bot input::-moz-placeholder{color:#b6bbbf;}
+.con-header-bot input::-webkit-input-placeholder{color:#b6bbbf;}
+.con-header .search-input{
+    display: inline-block;
+    width: 246px;
+    height: 36px;
+    padding: 6px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.con-header .btn-search{
+    width: 66px;
+    height: 36px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: -3px 0 0 8px;
+    font-size: 12px;
+}
+.total-account{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~表格部分~~~~~~~~~~~~~~~~~~~~*/
+.sort{
+    cursor: pointer;
+}
+.color-table-ele{
+    color: #2F9FDF;
+}
+.task-table table{
+    width: 100%;
+    text-align: center;
+    line-height: 58px;
+    background: #FFFFFF;
+    border:1px solid #dedede;
+}
+.task-table thead th{
+    text-align: center;
+    border-bottom: 1px solid #EBEDEC;
+    background: #e6efee;
+}
+.task-table tbody td{
+    font-size: 12px;
+    border-bottom: 1px solid #EBEDEC;
+}
+thead th span{
+    height: 11px;
+    display: inline-block;
+    margin-left: 8px;
+}
+thead th span i{
+    display: block;
+    width: 8px;
+    height: 5px;
+    background: url("../../images/admin-ghost.png") no-repeat;
+    cursor: pointer;
+}
+thead th span i:nth-of-type(1){
+    background-position: -69px -5px;
+}
+thead th span i:nth-of-type(2){
+    margin-top: 2px;
+    background-position: -69px -11px;
+}
+thead th span i.up-choosed{
+    background-position: -82px -5px;
+}
+thead th span i.down-choosed{
+    background-position: -95px -11px;
+}
+.task-table tbody .operate a{
+    margin-right: 4px;
+}
+.task-table tbody td a:hover,
+.task-table tbody td a:visited,
+.task-table tbody td a:active,
+.task-table tbody td a{
+    color: #2F9FDF;
+}
+.task-tb-info table tbody td div {
+    line-height: 20px;
+}
+.operation{
+    width: 230px;
+}
+.operation a{
+    margin-right: 10px;
+}
+.task-list-con table tbody td div {
+    line-height: 20px;
+}
+.give-up i{
+    width: 12PX;
+    background-position: -115px -274px;
+}
+.submit-result i{
+    width: 12px;
+    background-position: -86px -274px;
+}
+.evidence i{
+    background-position: -30px -274px;
+}
+.reason i{
+    background-position: -58px -274px;
+}
+.table-wrap{
+    margin-bottom: 0;
+}
+.abnormal{
+    color: #e21f1d;
+}
+.error-msg{
+    height: 20px;
+    color: #fe0000;
+}
+/*暂无任务*/
+.no-task{
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: #999ea4;
+    border:1px solid #EBEDEC;
+    display: none;
+}

@@ -1,0 +1,399 @@
+/*
+	订单列表样式
+*/
+.show{
+    display: block;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分~~~~~~~~~~~~~~~~~~~~~*/
+.content-r{
+    padding: 0 0 0 1.233%;
+}
+.con-header{
+    background: #e6efee;
+    border:1px solid #dedede;
+    border-radius: 2px;
+    padding:16px 0 8px 12px;
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+.con-header .title{
+    margin-right: 8px;
+}
+.condition-area{
+    line-height: 34px;
+    float: left;
+    margin-right: 58px;
+}
+.condition-area:nth-of-type(3){
+    margin-right: 0;
+}
+.order-status-select-area{
+    display: inline-block;
+}
+.condition-area .title{
+    vertical-align: top;
+}
+.condition-selected{
+    display: inline-block;
+    margin-left: 16px;
+}
+.con-header-top label{
+    margin-left: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.con-header-top label:nth-of-type(1){
+    margin-left: 0;
+}
+.establish-time{
+    position: relative;
+}
+.establish-time i{
+    display: block;
+    position: absolute;
+    top:10px;
+    width: 18px;
+    height: 18px;
+    background: url("../../images/tui88-ghost.png") 0 -380px no-repeat;
+}
+.establish-time i.start-icon{
+    left: 206px;
+}
+.establish-time i.end-icon{
+    left: 396px;
+}
+.con-header-bot input{
+    width: 170px;
+    height: 36px;
+    outline: none;
+    border-radius: 2px;
+    padding: 0 8px;
+    border: 1px solid #dddddd;
+}
+.con-header-bot input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-header-bot input::-moz-placeholder{color:#b6bbbf;}
+.con-header-bot input::-webkit-input-placeholder{color:#b6bbbf;}
+.con-header .search-area{
+    margin-top: 16px;
+}
+.con-header .search-input{
+    display: inline-block;
+    width: 294px;
+    height: 36px;
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+.con-header .btn-search{
+    width: 66px;
+    height: 36px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: -2px 0 0 12px;
+    font-size: 12px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~表格部分~~~~~~~~~~~~~~~~~~~~*/
+.task-table table{
+    width: 100%;
+    text-align: center;
+    line-height: 58px;
+    background: #FFFFFF;
+    border:1px solid #dedede;
+}
+.task-table thead th{
+    text-align: center;
+    border-bottom: 1px solid #EBEDEC;
+    background: #e6efee;
+}
+.task-table tbody td{
+    font-size: 12px;
+    border-bottom: 1px solid #EBEDEC;
+}
+.task-table tbody .operate a{
+    margin-right: 4px;
+}
+.task-table tbody td a:hover,
+.task-table tbody td a:visited,
+.task-table tbody td a:active,
+.task-table tbody td a{
+    color: #2F9FDF;
+}
+.task-tb-info table tbody td div {
+    line-height: 20px;
+}
+.operation{
+    width: 230px;
+}
+.operation a{
+    margin-right: 10px;
+}
+.task-list-con table tbody td div {
+    line-height: 20px;
+}
+.give-up i{
+    width: 12PX;
+    background-position: -115px -274px;
+}
+.submit-result i{
+    width: 12px;
+    background-position: -86px -274px;
+}
+.evidence i{
+    background-position: -30px -274px;
+}
+.reason i{
+    background-position: -58px -274px;
+}
+.table-wrap{
+    margin-bottom: 0;
+}
+.abnormal{
+    color: #e21f1d;
+}
+.error-msg{
+    height: 20px;
+    color: #fe0000;
+}
+
+/*===== modal样式 =====*/
+.modal-header{
+    border-bottom: 1px solid #C0C5CB;
+}
+.modal-footer{
+    border: 0;
+}
+.modal-content{
+    padding: 0 10px 20px;
+}
+.modal-dialog{
+    width: 602px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -304px 0 0 -301px;
+}
+.modal-dialog .modal-body,
+.modal-dialog .modal-body button,
+.modal-dialog .modal-body a{
+    font-size: 12px;
+}
+.modal-dialog .modal-footer a{
+    font-size: 12px;
+}
+.modal-header span{
+    color: #36526A;
+    font-weight: 500;
+}
+.modal-header i.close{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    margin-top: 2px;
+    background: url("../../images/tui88-ghost.png") -122px -89px no-repeat;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
+    transition:.5s;
+}
+.modal-header i.close:hover{
+    opacity: 1;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*=== 审核modal ===*/
+.configuration-item{
+    color: #38526B;
+}
+#modal-check .configuration-item li{
+    margin-bottom: 0;
+}
+.pic{
+    display: inline-block;
+    width: 460px;
+    margin-left: -2px;
+}
+.pic-show span{
+    color: #38526B;
+    vertical-align: top;
+}
+.pic img{
+    width: 108px;
+    height: 132px;
+    border: 1px solid #C0C5CB;
+    border-radius: 4px;
+    vertical-align: top;
+    margin:8px 8px 0 0;
+}
+.remarks{
+    line-height: 22px;
+    margin: 20px 0 0 4px;
+}
+.remarks span:nth-of-type(2){
+    display: inline-block;
+    width: 460px;
+}
+#modal-check .modal-body{
+    max-height: 530px;
+    overflow-y: scroll;
+}
+#modal-check .title,
+#modal-modify .title{
+    display: inline-block;
+    width: 54px;
+    text-align: right;
+    margin-right: 10px;
+}
+.modify-account input{
+    display: inline-block;
+    width: 204px;
+    height: 36px;
+}
+.modify-account .task-account{
+    margin-left: 18px;
+    color:#a0a2ae;
+}
+.reply-msg textarea{
+    display: inline-block;
+    width: 466px;
+    height: 70px;
+    resize: none;
+}
+.reply-msg .title{
+    vertical-align: top;
+}
+.error-msg{
+    margin-left: 60px;
+}
+.btn-group-checkd{
+    text-align: center;
+}
+.btn-group-checkd button{
+    margin:0 40px;
+}
+.info-group{
+    margin:10px 0;
+}
+.reply-msg{
+    margin-bottom: 4px;
+}
+/*== 修改modal ==*/
+#modal-modify .configuration-item li:nth-of-type(1) .title{
+    width: 54px;
+}
+#modal-modify .configuration-item li{
+    margin-bottom: 10px;
+}
+#modal-modify .configuration-item li input{
+    width: 465px;
+}
+#modal-modify .configuration-item input{
+    display: inline-block;
+    width: 134px;
+    height: 36px;
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+#modal-modify button,
+#modal-check button{
+    width: 78px;
+    height: 36px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+}
+/*上传图片样式*/
+.upload-preview-area .file-list{
+    margin-top: 15px;
+    padding-left: 40px;
+}
+.upload-preview-area .file-list li{
+    display: inline-block;
+    margin: 0 0 10px 20px;
+    position: relative;
+    border-radius: 8px;
+}
+.upload-preview-area .file-list li img{
+    width: 92px;
+    height: 112px;
+    border-radius: 4px;
+}
+.upload-preview-area .file-list li .delete-pic{
+    position: absolute;
+    top:-6px;
+    right:-6px;
+    border-radius: 50%;
+    background: #2ea0de;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.upload-preview-area .file-list li .delete-pic:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.upload-preview-area .file-list li .delete-pic i{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 0;
+    background: url("../../images/phone.png") no-repeat -398px -30px;
+}
+.upload-preview-area .file-list .progress{
+    margin-bottom: 4px;
+}
+#modal-modify .modal-body{
+    max-height: 590px;
+    overflow-y: scroll;
+}
+.btn{
+    width: 78px;
+    height: 36px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:link{
+    color: #fff!important;
+}
+.btn-group-checked{
+    text-align: center;
+}
+.btn-group-checked .btn{
+    margin:0 24px;
+}
+/*暂无任务*/
+.no-task{
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: #999ea4;
+    border:1px solid #EBEDEC;
+    display: none;
+}

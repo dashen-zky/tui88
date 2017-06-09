@@ -1,0 +1,147 @@
+/*
+	结算订单列表样式
+*/
+.main-wrap{
+    /*兼容IE8*/
+    min-height: 100%;
+    min-height: 100vh;
+    margin: -72px 0 -42px 0;
+    padding: 72px 0 42px 0;
+    box-sizing:border-box;
+    min-width: 1200px;
+}
+.bread{
+    width: 93.333%;
+    margin: 0 auto;
+}
+/*搜索部分*/
+.content-h{
+    width:93.333%;
+    height: 54px;
+    margin: 0 auto;
+    padding: 8px 0 0 32px;
+    background: #e6efee;
+    border:1px solid #dedede;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.user-phone{
+    line-height: 36px;
+}
+.search-con select{
+    width: 115px;
+    height: 36px;
+    margin: 0 32px 0 22px;
+}
+.confirm-time{
+    width: 415px;
+    margin-left: 8.166%;
+    position: relative;
+}
+.input-search,
+.confirm-time input{
+    width: 37.108%;
+    height: 36px;
+    font-size: 12px;
+    outline:none;
+    border-radius: 4px;
+    border: 1px solid #bec5cd;
+    text-indent: 1em;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.confirm-time input:focus,
+.input-search:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.confirm-time i{
+    display: block;
+    position: absolute;
+    top:10px;
+    width: 18px;
+    height: 18px;
+    background: url("../../images/tui88-ghost.png") 0 -380px no-repeat;
+}
+.confirm-time i.start-icon{
+    left: 180px;
+}
+.confirm-time i.end-icon{
+    left: 356px;
+}
+.input-search{
+    width: 25.167%;
+    margin-left: 5.667%;
+    display: inline-block;
+    padding-left: 0;
+}
+.content-h .btn-search{
+    width: 66px;
+    height: 36px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: -4px 0 0 2%;
+}
+/*列表内容*/
+.task-table,
+.total-info{
+    width: 93.333%;
+    margin:0 auto;
+}
+.total-info{
+    margin:10px auto;
+    font-size: 12px;
+    line-height: 36px;
+}
+.total-info .btn-settlement{
+    color: #fff;
+    margin-left: 16px;
+    border-radius: 2px;
+}
+.task-table .table{
+    margin-bottom: 0;
+}
+.task-table table{
+    width: 100%;
+    text-align: center;
+    line-height: 58px;
+    background: #FFFFFF;
+    border:1px solid #dedede;
+}
+.task-table thead th{
+    text-align: center;
+    border-bottom: 1px solid #EBEDEC;
+    background: #e6efee;
+}
+.task-table tbody td{
+    font-size: 12px;
+    border-bottom: 1px solid #EBEDEC;
+}
+.task-table tbody .operate a{
+    margin-right: 4px;
+}
+.task-table tbody td a:hover,
+.task-table tbody td a:visited,
+.task-table tbody td a:active,
+.task-table tbody td a{
+    color: #2F9FDF;
+}
+/*暂无资源*/
+.no-task{
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: #999ea4;
+    border:1px solid #EBEDEC;
+    display: none;
+}

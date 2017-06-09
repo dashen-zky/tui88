@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>结算管理-结算</title>
+    <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../dep/css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/site-stage-common.css">
+    <link rel="stylesheet" href="../src/css/settlement-manage/settlement.css">
+</head>
+<body>
+<div class="header clearfix">
+    <h2 class="fl">TUI88后台ADMIN</h2>
+    <div class="personal-info fr">
+        <ul class="clearfix">
+            <li class="clearfix">
+                <i class="fl"></i>
+                <span class="user-name fl">荔枝</span>
+            </li>
+            <li><a href="javascript:;"><span class="msg-number">20</span></a></li>
+            <li><a class="logout color-fff" href="javascript:;">退出</a></li>
+        </ul>
+    </div>
+</div>
+<!-- 主要内容部分-->
+<div class="content-wrap clearfix">
+    <div class="sidebar fl">
+        <ul class="menu">
+            <li><a class="first-nav" href="#"><i></i><span>用户管理</span></a></li>
+            <li class="personal-setting">
+                <a class="first-nav" href="#"><i></i><span>任务管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#">任务发布</a>
+                    <a href="#">任务列表</a>
+                </div>
+            </li>
+            <li>
+                <a class="first-nav" href="#"><i></i><span>订单管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#">订单列表</a>
+                </div>
+            </li>
+            <li class="current-list-nav current-side-nav">
+                <a class="first-nav" href="#"><i></i><span>结算管理</span><em></em></a>
+                <div class="menu-list">
+                    <a href="#" class="current-list-nav">结算</a>
+                    <a href="#">结算记录</a>
+                </div>
+            </li>
+            <li><a class="first-nav" href="#"><i></i><span>财务管理</span></a></li>
+        </ul>
+    </div>
+    <div class="content-r fl">
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">结算管理</a></li>
+                <li class="active">结算</li>
+            </ol>
+        </div>
+        <div class="con-header">
+            <div class="condition-selected-area clearfix">
+               <div class="title fl">最近结算时间 :</div>
+                <div class="condition-selected settlement-time-selected fl">
+                    <span class="on">不限</span>
+                    <span>3个月前</span>
+                    <span>1个月前</span>
+                    <span>1周前</span>
+                </div>
+                <div class="settlement-time fl">
+                    <input type="text" name="settlement_start_time" value="" class="datetimepicker" readonly="readonly" placeholder="请选择开始时间"> 至
+                    <input type="text" name="settlement_end_time" value="" class="datetimepicker" readonly="readonly" placeholder="请选择结束时间">
+                    <i class="start-icon"></i><i class="end-icon"></i>
+                </div>
+            </div>
+            <div class="condition-selected-area clearfix">
+                <div class="title fl">待收款金额 :</div>
+                <div class="condition-selected amount-money-selected fl">
+                    <span class="on">不限</span>
+                    <span>500元以上</span>
+                    <span>100-500元</span>
+                    <span>50-100元</span>
+                    <span>0-50元</span>
+                </div>
+                <div class="amount-money-collection fl">
+                    <input type="text" name="min_amount" placeholder="￥最小金额"> 至
+                    <input type="text" name="max_amount" placeholder="￥最大金额">
+                </div>
+            </div>
+            <div class="search-area">
+                <input class="search-input form-control" type="text" placeholder="请输入用户手机号">
+                <button class="btn btn-search bg-main">搜索</button>
+            </div>
+        </div>
+        <div class="total-account clearfix">
+            <span>共<i>23</i>条信息</span>
+            <button class="btn bg-main settlement-all fr">全部结算</button>
+        </div>
+        <div class="task-table">
+            <div class="task-tb-info table-wrap table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="50"><input type="checkbox"></th>
+                            <th width="50">序号</th>
+                            <th width="150">用户手机号</th>
+                            <th class="sort" width="150">最近结算时间<span><i class="up"></i><i class="down down-choosed"></i></span></th>
+                            <th width="120">总结算订单</th>
+                            <th width="120">总结算金额</th>
+                            <th width="120">待收款订单</th>
+                            <th class="sort" width="150">待收款金额<span><i class="up"></i><i class="down"></i></span></th>
+                            <th width="150">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>15005174702</td>
+                            <td>2016.12.31 12:30</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td>80</td>
+                            <td>12,340.98</td>
+                            <td class="operate">
+                                <a class="unit-settlement-all" href="javascript:;">全部结算</a>
+                                <a href="#" target="_blank">订单</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="no-task">暂无结算信息</div>
+            </div>
+            <div class="page-wb system_page clearfix" data-value="20287">
+                <ul class="pagination fr"><li class="disabled"><a>首页</a></li>
+                    <li class="prev disabled"><a>上一页</a></li>
+                    <li class="active"><a data-page="0" style="cursor: pointer;">1</a></li>
+                    <li><a data-page="1" style="cursor: pointer;">2</a></li>
+                    <li><a data-page="2" style="cursor: pointer;">3</a></li>
+                    <li><a data-page="3" style="cursor: pointer;">4</a></li>
+                    <li><a data-page="4" style="cursor: pointer;">5</a></li>
+                    <li><a data-page="1" style="cursor: pointer;">下一页</a></li>
+                    <li class="last"><a data-page="2028" style="cursor: pointer;">尾页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../dep/js/jquery.datetimepicker.js"></script>
+<script src="../dep/js/datetime.js"></script>
+<script src="../dep/layer/layer.js"></script>
+<script src="../dep/js/tui88-tool.js"></script>
+<script src="../src/js/site-stage-common.js"></script>
+<script src="../src/js/settlement-manage/settlement.js"></script>
+</body>
+</html>

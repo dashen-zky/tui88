@@ -1,0 +1,79 @@
+/*
+    付款详情样式
+*/
+.main-wrap{
+    /*兼容IE8*/
+    min-height: 100%;
+    min-height: 100vh;
+    margin: -72px 0 -42px 0;
+    padding: 72px 0 42px 0;
+    box-sizing:border-box;
+    min-width: 1200px;
+}
+.bread{
+    width: 93.333%;
+    margin: 0 auto;
+}
+/* main-info*/
+.content-h{
+    width:93.333%;
+    margin: 0 auto 20px;
+    padding: 8px 0 8px 32px;
+    background: #e6efee;
+    border:1px solid #dedede;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.main-info ul li{
+    width: 25%;
+    line-height: 36px;
+    float: left;
+}
+.main-info .title{
+    display: inline-block;
+    width: 65px;
+    text-align: right;
+    margin-right: 4px;
+}
+/*列表内容*/
+.task-table{
+    width: 93.333%;
+    margin:0 auto;
+}
+.task-table .table{
+    margin-bottom: 0;
+}
+.task-table table{
+    width: 100%;
+    text-align: center;
+    line-height: 58px;
+    background: #FFFFFF;
+    border:1px solid #dedede;
+}
+.task-table thead th{
+    text-align: center;
+    border-bottom: 1px solid #EBEDEC;
+    background: #e6efee;
+}
+.task-table tbody td{
+    font-size: 12px;
+    border-bottom: 1px solid #EBEDEC;
+}
+.task-table tbody .operate a{
+    margin-right: 4px;
+}
+.task-table tbody td a:hover,
+.task-table tbody td a:visited,
+.task-table tbody td a:active,
+.task-table tbody td a{
+    color: #2F9FDF;
+}
+/*暂无资源*/
+.no-task{
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: #999ea4;
+    border:1px solid #EBEDEC;
+    display: none;
+}

@@ -1,0 +1,169 @@
+/*
+@name: tui88-proceeds-method-common.css
+@author: maotingting
+*/
+
+.show{
+    display: block;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~内容部分~~~~~~~~~~~~~*/
+.content{
+    height: 98%;
+    margin-left: 248px;
+}
+.incontent{
+    width: 99%;
+    height: 90%;
+    background: #ffffff;
+    position: relative;
+}
+.card-show,
+.info-show{
+    width: 300px;
+    font-size: 14px;
+    color: #36526A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin: -87px 0 0 -150px;
+}
+.bind-card i{
+    display: inline-block;
+    width: 101px;
+    height: 93px;
+    vertical-align: middle;
+    margin-right: 20px;
+    background: url("../../images/tui88-ghost.png") 0 -161px no-repeat;
+}
+.bind-card span{
+    font-size: 16px;
+    color: #9CA4AF;
+}
+.bind-btn{
+    display: inline-block;
+    width: 92px;
+    height: 36px;
+    background: #2EA0DE;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 30px;
+}
+.card-show{
+	margin-top: -166px;
+}
+.card-show h3{
+	font-size: 16px;
+    text-align: center;
+    color: #3A5067;
+    line-height: 56px;
+    margin: 0 0 14px -34px;
+    font-weight: bold;
+}
+.card-show  li{
+	line-height: 56px;
+}
+.card-show  li span:nth-of-type(1){
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+	margin-right: 26px;
+}
+.card-show  li span:nth-of-type(2){
+	display: inline-block;
+	width: 194px;
+	text-align: left;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~绑定银行卡modal层~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-header{
+    border-bottom: 1px solid #C0C5CB;
+}
+.modal-footer{
+    border: 0;
+}
+.modal-content{
+    height: 416px;
+    padding: 0 10px;
+}
+.modal-dialog{
+    width: 494px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -208px 0 0 -247px;
+}
+.modal-header span{
+    color: #36526A;
+}
+.modal-header i.close{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    margin-top: 2px;
+    background: url("../../images/tui88-ghost.png") -122px -89px no-repeat;
+}
+.modal-header i.close:hover{
+    opacity: 1;
+}
+.modal-body{
+    margin-top: 36px;
+    padding: 0;
+}
+.modal-body .info-group{
+    position: relative;
+}
+.modal-body .info-group span{
+    width: 70px;
+}
+.info-group span:nth-of-type(1){
+    display: inline-block;
+    width: 86px;
+    text-align: right;
+    line-height: 44px;
+    margin-right: 10px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.info-group input{
+    display: inline-block;
+    width: 348px;
+    height: 37px;
+}
+.test-code input{
+    width: 208px;
+}
+.test-code button{
+    display: inline-block;
+    width: 132px;
+    height: 38px;
+    text-align: center;
+    background: #2EA0DE;
+    color: #ffffff;
+    border: 0 none;
+    border-radius: 2px;
+}
+.error-alert{
+    color: #BF1F1F;
+    font-size: 12px;
+    position: absolute;
+    bottom: -13px;
+    left: 100px;
+    display: none;
+}
+.save-btn{
+    display: inline-block;
+    width: 78px;
+    height: 38px;
+    text-align: center;
+    background: #2EA0DE;
+    color: #ffffff;
+    border: 0 none;
+    border-radius: 2px;
+    margin: 34px 0 0 220px;
+}

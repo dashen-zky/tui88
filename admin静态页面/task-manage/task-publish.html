@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>任务发布</title>
+    <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+    <link href="../dep/datetimepicker/jquery.datetimepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/site-stage-common.css">
+    <link rel="stylesheet" href="../src/css/task-manage/task-publish.css">
+</head>
+    <body>
+        <div class="header clearfix">
+            <h2 class="fl">TUI88后台ADMIN</h2>
+            <div class="personal-info fr">
+                <ul class="clearfix">
+                    <li class="clearfix">
+                        <i class="fl"></i>
+                        <span class="user-name fl">荔枝</span>
+                    </li>
+                    <li><a href="javascript:;"><span class="msg-number">20</span></a></li>
+                    <li><a class="logout color-fff" href="javascript:;">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-wrap clearfix">
+            <div class="sidebar fl">
+                <ul class="menu">
+                    <li><a class="first-nav" href="#"><i></i><span>推客管理</span></a></li>
+                    <li class="current-side-nav personal-setting">
+                        <a class="first-nav" class="" href="#"><i></i><span>任务管理</span><em></em></a>
+                        <div class="menu-list">
+                            <a href="#" class="current-list-nav">任务发布</a>
+                            <a href="#">任务列表</a>
+                        </div>
+                    </li>
+                    <li><a class="first-nav" href="#"><i></i><span>财务管理</span></a></li>
+                </ul>
+            </div>
+            <div class="content-r fl">
+                <div class="section">
+                    <h4>任务基础设置</h4>
+                    <div class="con-detail task-base-setting clearfix">
+                        <div class="fill-area receive-time fl">
+                            <span class="title">领取时间:</span>
+                            <input type="text" name="receive_start_time" value="" class="input-section text-input datetimepicker" readonly="readonly">
+                            <span class="line"></span>
+                            <input type="text" name="receive_end_time" value="" class="input-section text-input datetimepicker" readonly="readonly">
+                        </div>
+                        <div class="fill-area execute-time fl">
+                            <span class="title">执行时间:</span>
+                            <input type="text" name="execute_start_time" value="" class="input-section text-input datetimepicker" readonly="readonly">
+                            <span class="line"></span>
+                            <input type="text" name="execute_end_time" value="" class="input-section text-input datetimepicker" readonly="readonly">
+                        </div>
+                        <div class="fill-area customer-account fl">
+                            <span class="title">任务数量:</span>
+                            <input type="text">
+                        </div>
+                        <div class="fill-area task-unit-price fl">
+                            <span class="title">任务金额:</span>
+                            <input type="text"> 元
+                            <span class="total-price">任务总额: <i>2000</i> 元</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>任务内容设置</h4>
+                    <div class="con-detail task-con-setting">
+                        <div class="fill-area task-name">
+                            <span class="title">任务名称:</span>
+                            <input maxlength="50" type="text">
+                            <span style="margin-left: 10px;"><i class="font-num">0</i>/50</span>
+                        </div>
+                        <div class="fill-area task-content clearfix">
+                            <span class="title fl">任务内容:</span>
+                            <textarea class="fl" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="fill-area check-standard clearfix">
+                            <span class="title fl">验收标准:</span>
+                            <textarea class="fl" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="fill-area remark clearfix">
+                            <span class="title fl">备注:</span>
+                            <textarea class="fl" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>任务提交内容</h4>
+                    <div class="con-detail task-submit">
+                        <ul class="clearfix">
+                            <li><label><input type="checkbox" name="ID-card">身份证</label></li>
+                            <li><label><input type="checkbox" name="phone">手机号</label></li>
+                            <li><label><input type="checkbox" name="regist-account">注册账号</label></li>
+                            <li><label><input type="checkbox" name="screen-shoot">截图</label></li>
+                        </ul>
+                    </div>
+                    <p class="tips">* 内容可配置</p>
+                </div>
+                <div class="btn-section">
+                    <button class="save-draft btn">保存草稿</button>
+                    <button class="publish btn">发布</button>
+                </div>
+            </div>
+        </div>
+        <script src="../dep/js/jquery-1.10.2.min.js"></script>
+        <script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+        <script src="../dep/datetimepicker/jquery.datetimepicker.js"></script>
+        <script src="../dep/datetimepicker/datetime.js"></script>
+        <script src="../dep/layer/layer.js"></script>
+        <script src="../dep/js/tui88-tool.js"></script>
+        <script src="../src/js/site-stage-common.js"></script>
+        <script src="../src/js/task-manage/task-publish.js"></script>
+        <script>
+            $(function () {
+                $('.task-name input').on("keyup",function () {
+                    var task_name_len = $(this).val().length;
+                    $(this).siblings().children('.font-num').text(task_name_len);
+                })
+            })
+        </script>
+    </body>
+</html>
