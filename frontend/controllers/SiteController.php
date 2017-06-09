@@ -289,4 +289,9 @@ class SiteController extends BaseAppController
         return true;
     }
 
+    public function ddd()
+    {
+
+    }
+
 }
